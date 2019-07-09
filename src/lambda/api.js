@@ -13,3 +13,7 @@ app.use(cors());
 router.get('/ping', (req, res) => {
   res.send('pong!');
 });
+
+module.exports = app;
+
+module.exports.handler = serverless(app);
