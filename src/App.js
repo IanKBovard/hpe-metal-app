@@ -16,6 +16,12 @@ function App() {
           target="_blank"
           rel="noopener noreferrer"
         >
+        <object
+          type="text/html"
+          data="/.netlify/functions/server"
+          style={ { 'width': '100%', 'height': '100%' } }
+        >  
+        </object>
           Learn React
         </a>
       </header>
