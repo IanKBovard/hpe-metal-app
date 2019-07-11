@@ -5,7 +5,7 @@ import Loading from '../src/containers/loading';
 
 function App() {
   return (
-    <Grommet theme={hpe}>
+    <Grommet full theme={hpe}>
       <Loading />
     </Grommet>
   );
