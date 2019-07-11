@@ -1,17 +1,17 @@
 import React from 'react';
 import { Box, Anchor } from 'grommet';
-import { HandDiv, AccentDiv, ImageDiv, AccentDivPink, TitleText, TextDiv, InfoText } from './style';
+import { HandDiv, AccentDiv, ImageDiv, AccentDivPink, TitleText, TextDiv, InfoText, Layout } from './style';
 
 const Loading = () => {
   return (
-    <Box fill direction="row-responsive" background="#1F2532" pad={{ top: 'xlarge', left: 'xlarge' }}>
+    <Layout fill height="large" direction="row-responsive" background="#1F2532" pad={{ top: 'xlarge', left: 'xlarge' }}>
       <TextDiv basis="1/4" direction="column" pad={{ top: 'xlarge'}}>
         <Box>
           <TitleText>Get ready for</TitleText>
           <TitleText>something</TitleText>
           <TitleText>wicked</TitleText>
         </Box>
-        <Box margin={{ top: 'large' }}>
+        <Box margin={{ top: 'large' }} >
           <InfoText>Taking you to your server! Can't wait? No</InfoText>
           <InfoText>prob, take me to <Anchor label="my portal"/>.</InfoText>
         </Box>
@@ -22,7 +22,7 @@ const Loading = () => {
         <HandDiv src="./img/loading/metal-hand.svg"/>
         <AccentDiv src="./img/loading/metal-yellow.svg"/>
       </ImageDiv>
-    </Box>
+    </Layout>
   );
 }
 

@@ -1,6 +1,10 @@
 import styled from 'styled-components';
 import { Box, Image, Text, Heading } from 'grommet';
 
+export const Layout = styled(Box)`
+  min-height: 600px;
+`;
+
 export const HandDiv = styled(Image)`
   position:absolute;
   width: 30%;
