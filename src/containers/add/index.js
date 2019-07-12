@@ -1,5 +1,5 @@
 import React from 'react';
-import { AddLayout, StyledBox, TitleText1, TitleText2, InfoText, Flower, SkullYellow, LightningPurple, GuitarGreen, SkullBlue, LightningBlue, SkullRed, LightningGreen, GuitarPurple, Eye, Swords, Bird, Heart, Anchor, ButtonRay, StyledButton } from './style'
+import { AddLayout, StyledBox, TitleText1, TitleText2, InfoText, Flower, SkullYellow, LightningPurple, GuitarGreen, SkullBlue, LightningBlue, SkullRed, LightningGreen, GuitarPurple, Eye, Swords, Bird, Heart, Anchor, ButtonDeco, StyledButton } from './style'
 
 const Add = () => {
   return (
@@ -22,7 +22,7 @@ const Add = () => {
         <Bird src="./img/add/bird.svg" />
         <Heart src="./img/add/heart.svg" />
         <Anchor src="./img/add/anchor.svg" /> */}
-        <ButtonRay alignSelf="center" src="./img/add/button-ray.svg" />
+        <ButtonDeco alignSelf="center" src="./img/add/button-ray.svg" />
       </StyledBox>
     </AddLayout>
   );

@@ -151,7 +151,7 @@ export const Anchor = styled(Image)`
   bottom: -20%;
 `;
 
-export const ButtonRay = styled(Image)`
+export const ButtonDeco = styled(Image)`
   position: absolute;
   width: 15%;
   height: auto;  
