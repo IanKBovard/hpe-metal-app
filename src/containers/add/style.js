@@ -3,7 +3,7 @@ import { Box, Image, Text, Heading, Button } from 'grommet';
 
 export const AddLayout = styled(Box)`
   min-height: 700px;
-  height: 699px;
+  height: 100%;
   overflow: hidden;
 `;
 
@@ -149,6 +149,13 @@ export const Anchor = styled(Image)`
   height: auto;
   right: 34%;  
   bottom: -20%;
+`;
+
+export const ButtonRay = styled(Image)`
+  position: absolute;
+  width: 15%;
+  height: auto;  
+  bottom: 20%;
 `;
 
 export const StyledBox = styled(Box)`

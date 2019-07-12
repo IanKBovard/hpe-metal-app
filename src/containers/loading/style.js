@@ -3,6 +3,7 @@ import { Box, Image, Text, Heading } from 'grommet';
 
 export const HomeLayout = styled(Box)`
   min-height: 700px;
+  height: 100%;
   overflow: hidden;
 `;
 
