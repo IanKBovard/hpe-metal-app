@@ -3,8 +3,8 @@ import { Box, Image, Text, Heading, Button } from 'grommet';
 
 export const AddLayout = styled(Box)`
   min-height: 700px;
+  height: 699px;
   overflow: hidden;
-  width: 100%;
 `;
 
 export const TitleText1 = styled(Heading)`
