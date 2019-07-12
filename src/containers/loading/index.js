@@ -1,27 +1,21 @@
 import React from 'react';
 import { Box, Anchor } from 'grommet';
-import { HandDiv, AccentDiv, ImageDiv, AccentDivPink, TitleText, TextDiv, InfoText, HomeLayout } from './style';
+import { Hand, Accent, StyledBox, AccentPink, TitleText1, TitleText2, TitleText3, InfoText1, InfoText2, HomeLayout } from './style';
 
 const Loading = () => {
   return (
-    <HomeLayout fill direction="row-responsive" background="#1F2532" pad={{ top: 'xlarge', left: 'xlarge' }}>
-      <TextDiv basis="1/4" direction="column" pad={{ top: 'xlarge'}}>
-        <Box>
-          <TitleText>Get ready for</TitleText>
-          <TitleText>something</TitleText>
-          <TitleText>wicked</TitleText>
-        </Box>
-        <Box margin={{ top: 'large' }}>
-          <InfoText>Taking you to your server! Can't wait? No</InfoText>
-          <InfoText>prob, take me to <Anchor label="my portal"/>.</InfoText>
-        </Box>
-      </TextDiv>
-      <ImageDiv basis="3/4">
-        <AccentDiv src="./img/loading/metal-red.svg"/>
-        <AccentDivPink src="./img/loading/metal-pink.svg"/>
-        <HandDiv src="./img/loading/metal-hand.svg"/>
-        <AccentDiv src="./img/loading/metal-yellow.svg"/>
-      </ImageDiv>
+    <HomeLayout fill background="#1F2532">
+    <StyledBox>
+      <TitleText1>Get ready for</TitleText1>
+      <TitleText2>something</TitleText2>
+      <TitleText3>wicked</TitleText3>
+      <InfoText1>Taking you to your server! Can't wait? No</InfoText1>
+      <InfoText2>prob, take me to <Anchor label="my portal"/>.</InfoText2>
+        <Accent src="./img/loading/metal-red.svg"/>
+        <AccentPink src="./img/loading/metal-pink.svg"/>
+        <Hand src="./img/loading/metal-hand.svg"/>
+        <Accent src="./img/loading/metal-yellow.svg"/>
+      </StyledBox>
     </HomeLayout>
   );
 }
