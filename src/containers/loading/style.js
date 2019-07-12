@@ -1,12 +1,13 @@
 import styled from 'styled-components';
 import { Box, Image, Text, Heading } from 'grommet';
 
-export const Layout = styled(Box)`
-  min-height: 600px;
+export const HomeLayout = styled(Box)`
+  min-height: 700px;
+  overflow: hidden;
 `;
 
 export const HandDiv = styled(Image)`
-  position:absolute;
+  position: absolute;
   width: 30%;
   height: auto;
   right: 37%;  
@@ -14,7 +15,7 @@ export const HandDiv = styled(Image)`
 `;
 
 export const AccentDiv = styled(Image)`
-  position:absolute;
+  position: absolute;
   width: 100%;
   height: auto;
   right: 0;  
@@ -22,7 +23,7 @@ export const AccentDiv = styled(Image)`
 `;
 
 export const AccentDivPink = styled(Image)`
-  position:absolute;
+  position: absolute;
   width: 100%;
   height: auto;
   right: 0;

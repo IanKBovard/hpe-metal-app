@@ -1,12 +1,13 @@
 import React from 'react';
-import { Grommet, Box, Text } from 'grommet';
+import { Grommet } from 'grommet';
 import { hpe } from 'grommet-theme-hpe';
 import Loading from '../src/containers/loading';
+import Add from '../src/containers/add';
 
 function App() {
   return (
     <Grommet full theme={hpe}>
-      <Loading />
+      <Add />
     </Grommet>
   );
 }
