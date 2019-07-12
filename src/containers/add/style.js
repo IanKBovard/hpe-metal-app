@@ -4,6 +4,7 @@ import { Box, Image, Text, Heading, Button } from 'grommet';
 export const AddLayout = styled(Box)`
   min-height: 700px;
   overflow: hidden;
+  width: 100%;
 `;
 
 export const TitleText1 = styled(Heading)`
@@ -157,4 +158,5 @@ export const StyledBox = styled(Box)`
 
 export const StyledButton = styled(Button)`
   box-shadow: 0px 3px 3px 3px black;
+  border-radius: 50%;
 `;

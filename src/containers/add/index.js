@@ -1,6 +1,6 @@
 import React from 'react';
-import { Button, Box } from 'grommet';
 import { AddLayout, StyledBox, TitleText1, TitleText2, InfoText, Flower, SkullYellow, LightningPurple, GuitarGreen, SkullBlue, LightningBlue, SkullRed, LightningGreen, GuitarPurple, Eye, Swords, Bird, Heart, Anchor, StyledButton } from './style'
+
 const Add = () => {
   return (
     <AddLayout fill background="#1F2532">
@@ -8,7 +8,6 @@ const Add = () => {
         <TitleText1 alignSelf="center">You need more metal in</TitleText1>
         <TitleText2 alignSelf="center">your life!</TitleText2>
         <InfoText alignSelf="center" margin={{ top: 'medium' }}>Just push the button to let the metal rain down!</InfoText>
-        <StyledButton alignSelf="center" label="click me" />
 {/*         <Flower src="./img/add/flower.svg" />
         <SkullYellow src="./img/add/skull-yellow.svg" />
         <LightningPurple src="./img/add/lightning-purple.svg" />
