@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 import { Box, Text, Heading, Button } from 'grommet';
 
-export const AddLayout = styled(Box)`
+export const SignupLayout = styled(Box)`
   min-height: 700px;
   height: 100%;
 `;

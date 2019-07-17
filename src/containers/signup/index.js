@@ -3,7 +3,7 @@ import {Box} from 'grommet';
 
 import SVG from '../../components/svg/index';
 import {
-  AddLayout,
+  SignupLayout,
   StyledBox,
   TitleText1,
   TitleText2,
@@ -25,7 +25,7 @@ const svgNamesHover = [
 
 const Signup = () => {
   return (
-    <AddLayout fill background="#1F2532">
+    <SignupLayout fill background="#1F2532">
       <StyledBox>
       <Box>
         <TitleText1>You need more metal in</TitleText1>
@@ -41,7 +41,7 @@ const Signup = () => {
           <SVG name="button accent" />
         </Box>
       </StyledBox>
-    </AddLayout>
+    </SignupLayout>
   );
 };
 
