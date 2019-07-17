@@ -26,7 +26,15 @@ const Loading = () => {
           prob, take me to <Anchor label="my portal" />.
         </InfoText2>
         {svgNames.map(name => (
-         <Box><SVG name={name} /></Box>
+          <Box
+            style={{
+              width: '100%',
+              height: 0,
+              position: 'absolute',
+            }}
+          >
+            <SVG name={name} />
+          </Box>
         ))}
       </StyledBox>
     </HomeLayout>
