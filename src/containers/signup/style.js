@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { Box, Image, Text, Heading, Button } from 'grommet';
+import { Box, Text, Heading, Button } from 'grommet';
 
 export const AddLayout = styled(Box)`
   min-height: 700px;
@@ -10,7 +10,7 @@ export const TitleText1 = styled(Heading)`
   position: absolute;
   font-size: 6vw;
   font-weight: 900;
-  line-height: .8em;
+  line-height: 0.8em;
   margin: 0px;
   z-index: 100;
   white-space: nowrap;
@@ -21,7 +21,7 @@ export const TitleText2 = styled(Heading)`
   position: absolute;
   font-size: 6vw;
   font-weight: 900;
-  line-height: .8em;
+  line-height: 0.8em;
   margin: 0px;
   z-index: 100;
   white-space: nowrap;
@@ -32,7 +32,7 @@ export const InfoText = styled(Text)`
   position: absolute;
   font-size: 2.5vw;
   font-weight: 200;
-  line-height: .8em;
+  line-height: 0.8em;
   z-index: 100;
   white-space: nowrap;
   top: 36%;

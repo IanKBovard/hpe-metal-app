@@ -8,7 +8,6 @@ body {
 
 .SVG {
   position: absolute;
-  height: auto;
 }
 
 /* Loading Screen */
@@ -49,7 +48,6 @@ body {
 .Button-Accent {
   width: 15%;
   bottom: 20%;
-  align-self: center;
 }
 
 .Eye {

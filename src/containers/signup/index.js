@@ -1,4 +1,5 @@
 import React from 'react';
+import {Box} from 'grommet';
 
 import SVG from '../../components/svg/index';
 import {
@@ -22,22 +23,26 @@ const svgNamesHover = [
   'guitar purple',
 ];
 
-const Add = () => {
+const Signup = () => {
   return (
     <AddLayout fill background="#1F2532">
       <StyledBox>
-        <TitleText1 alignSelf="center">You need more metal in</TitleText1>
-        <TitleText2 alignSelf="center">your life!</TitleText2>
-        <InfoText alignSelf="center" margin={{ top: 'medium' }}>
+      <Box align="center">
+        <TitleText1>You need more metal in</TitleText1>
+        <TitleText2>your life!</TitleText2>
+        <InfoText margin={{ top: 'medium' }}>
           Just push the button to let the metal rain down!
         </InfoText>
+      </Box>
         {svgNames.map(name => (
           <SVG name={name} />
         ))}
-        <SVG name="button accent" />
+        <Box align="center">
+          <SVG name="button accent" />
+        </Box>
       </StyledBox>
     </AddLayout>
   );
 };
 
-export default Add;
+export default Signup;

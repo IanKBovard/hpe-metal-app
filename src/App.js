@@ -2,12 +2,12 @@ import React from 'react';
 import { Grommet } from 'grommet';
 import { hpe } from 'grommet-theme-hpe';
 import Loading from '../src/containers/loading';
-import Add from '../src/containers/add';
+import Signup from '../src/containers/signup';
 
 function App() {
   return (
     <Grommet full theme={hpe}>
-      <Add />
+      <Signup />
 {/*       <Loading /> */}
     </Grommet>
   );
