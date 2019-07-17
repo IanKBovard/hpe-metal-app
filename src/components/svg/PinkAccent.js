@@ -3,8 +3,6 @@ import React from 'react';
 const PinkAccent = () => {
   return (
     <svg
-      width="1422"
-      height="402"
       viewBox="0 0 1422 402"
       xmlns="http://www.w3.org/2000/svg"
       className="Pink-Accent SVG"
