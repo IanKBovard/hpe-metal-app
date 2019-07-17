@@ -1,5 +1,5 @@
 import React from 'react';
-import { Anchor } from 'grommet';
+import { Anchor, Box } from 'grommet';
 
 import SVG from '../../components/svg/index';
 import {
@@ -26,7 +26,7 @@ const Loading = () => {
           prob, take me to <Anchor label="my portal" />.
         </InfoText2>
         {svgNames.map(name => (
-          <SVG name={name} />
+         <Box><SVG name={name} /></Box>
         ))}
       </StyledBox>
     </HomeLayout>
