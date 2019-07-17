@@ -27,7 +27,7 @@ const Signup = () => {
   return (
     <AddLayout fill background="#1F2532">
       <StyledBox>
-      <Box align="center">
+      <Box>
         <TitleText1>You need more metal in</TitleText1>
         <TitleText2>your life!</TitleText2>
         <InfoText margin={{ top: 'medium' }}>
@@ -37,7 +37,7 @@ const Signup = () => {
         {svgNames.map(name => (
           <SVG name={name} />
         ))}
-        <Box align="center">
+        <Box>
           <SVG name="button accent" />
         </Box>
       </StyledBox>
