@@ -3,10 +3,11 @@ import React from 'react';
 const Hand = () => {
   return (
     <svg
+      width="342"
+      height="943"
       viewBox="0 0 342 943"
       xmlns="http://www.w3.org/2000/svg"
       xmlnsXlink="http://www.w3.org/1999/xlink"
-      preserveAspectRatio="xMidYMid meet"
       className="Hand SVG"
     >
       <defs>
