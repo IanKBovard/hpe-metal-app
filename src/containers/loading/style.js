@@ -1,12 +1,7 @@
 import styled from 'styled-components';
 import { Box, Text, Heading } from 'grommet';
 
-export const HomeLayout = styled(Box)`
-  min-height: 700px;
-  height: 100%;
-`;
-
-export const StyledBox = styled(Box)`
+export const Layout = styled(Box)`
   position: relative;
   padding-top: 56.25%;
 `;
