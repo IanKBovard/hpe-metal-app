@@ -8,6 +8,7 @@ function App() {
   return (
     <Grommet full theme={hpe}>
       <Add />
+{/*       <Loading /> */}
     </Grommet>
   );
 }

@@ -1,5 +1,125 @@
 body {
   margin: 0;
   padding: 0;
-  background: #1F2532;
+  background: #1f2532;
+}
+
+/* SVG IMGS */
+
+.SVG {
+  position: absolute;
+  height: auto;
+}
+
+/* Loading Screen */
+
+.Accent {
+  width: 80%;
+  right: 0;
+  bottom: 0;
+}
+
+.Hand {
+  width: 20%;
+  right: 32%;
+  bottom: 0;
+}
+
+.Pink-Accent {
+  width: 80%;
+  right: 0;
+  bottom: 0;
+  mix-blend-mode: overlay;
+}
+
+/* Add Screen */
+
+.Anchor {
+  width: 15%;
+  right: 34%;
+  bottom: -20%;
+}
+
+.Bird {
+  width: 15%;
+  right: 25%;
+  top: 35%;
+}
+
+.Button-Accent {
+  width: 15%;
+  bottom: 20%;
+  align-self: center;
+}
+
+.Eye {
+  width: 10%;
+  right: 33%;
+  top: 1%;
+}
+
+.Flower {
+  width: 15%;
+  left: 18%;
+  top: -14%;
+}
+
+.Guitar-Green {
+  width: 20%;
+  left: 11%;
+  bottom: 28%;
+}
+
+.Guitar-Purple {
+  width: 20%;
+  right: 20%;
+  bottom: -42%;
+}
+
+.Heart {
+  width: 15%;
+  left: 20%;
+  bottom: 5%;
+}
+
+.Lightning-Blue {
+  width: 10%;
+  right: 28%;
+  bottom: 30%;
+}
+
+.Lightning-Green {
+  width: 10%;
+  left: 29%;
+  bottom: -30%;
+}
+
+.Lightning-Purple {
+  width: 10%;
+  left: 35%;
+  top: 5%;
+}
+
+.Skull-Blue {
+  width: 9%;
+  left: 32%;
+  bottom: 20%;
+}
+
+.Skull-Yellow {
+  width: 10%;
+  right: 28%;
+  top: -4%;
+}
+
+.Skull-Red {
+  width: 10%;
+  right: 16%;
+  bottom: 15%;
+}
+
+.Swords {
+  width: 15%;
+  left: 28%;
+  top: 15%;
 }

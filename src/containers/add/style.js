@@ -4,7 +4,6 @@ import { Box, Image, Text, Heading, Button } from 'grommet';
 export const AddLayout = styled(Box)`
   min-height: 700px;
   height: 100%;
-  overflow: hidden;
 `;
 
 export const TitleText1 = styled(Heading)`
@@ -37,125 +36,6 @@ export const InfoText = styled(Text)`
   z-index: 100;
   white-space: nowrap;
   top: 36%;
-`;
-
-export const Flower = styled(Image)`
-  position: absolute;
-  width: 15%;
-  height: auto;
-  left: 18%;  
-  top: -14%;
-`;
-
-export const SkullYellow = styled(Image)`
-  position: absolute;
-  width: 10%;
-  height: auto;
-  right: 28%;  
-  top: -4%;
-`;
-
-export const LightningPurple = styled(Image)`
-  position: absolute;
-  width: 10%;
-  height: auto;
-  left: 35%;  
-  top: 5%;
-`;
-
-export const GuitarGreen = styled(Image)`
-  position: absolute;
-  width: 20%;
-  height: auto;
-  left: 11%;  
-  bottom: 28%;
-`;
-
-export const SkullBlue = styled(Image)`
-  position: absolute;
-  width: 9%;
-  height: auto;
-  left: 32%;  
-  bottom: 20%;
-`;
-
-export const LightningBlue = styled(Image)`
-  position: absolute;
-  width: 10%;
-  height: auto;
-  right: 28%;  
-  bottom: 30%;
-`;
-
-export const SkullRed = styled(Image)`
-  position: absolute;
-  width: 10%;
-  height: auto;
-  right: 16%;  
-  bottom: 15%;
-`;
-
-export const LightningGreen = styled(Image)`
-  position: absolute;
-  width: 10%;
-  height: auto;
-  left: 29%;  
-  bottom: -30%;
-`;
-
-export const GuitarPurple = styled(Image)`
-  position: absolute;
-  width: 20%;
-  height: auto;
-  right: 20%;  
-  bottom: -42%;
-`;
-
-export const Eye = styled(Image)`
-  position: absolute;
-  width: 10%;
-  height: auto;
-  right: 33%;  
-  top: 1%;
-`;
-
-export const Swords = styled(Image)`
-  position: absolute;
-  width: 15%;
-  height: auto;
-  left: 28%;  
-  top: 15%;
-`;
-
-export const Bird = styled(Image)`
-  position: absolute;
-  width: 15%;
-  height: auto;
-  right: 25%;  
-  top: 35%;
-`;
-
-export const Heart = styled(Image)`
-  position: absolute;
-  width: 15%;
-  height: auto;
-  left: 20%;  
-  bottom: 5%;
-`;
-
-export const Anchor = styled(Image)`
-  position: absolute;
-  width: 15%;
-  height: auto;
-  right: 34%;  
-  bottom: -20%;
-`;
-
-export const ButtonDeco = styled(Image)`
-  position: absolute;
-  width: 15%;
-  height: auto;  
-  bottom: 20%;
 `;
 
 export const StyledBox = styled(Box)`
