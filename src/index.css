@@ -8,6 +8,8 @@ body {
 
 .SVG {
   position: absolute;
+  height: auto;
+  min-height: 1px;
 }
 
 /* Loading Screen */
