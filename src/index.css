@@ -8,6 +8,10 @@ body {
 
 .SVG {
   position: absolute;
+  @media screen and (-ms-high-contrast: active), screen and (-ms-high-contrast: none) {  
+    height: 1px;
+    overflow: visible; 
+ }
 }
 
 /* Loading Screen */
@@ -16,18 +20,27 @@ body {
   width: 80%;
   right: 0;
   bottom: 0;
+  @media screen and (-ms-high-contrast: active), screen and (-ms-high-contrast: none) {  
+    padding-bottom: 26%;
+ }
 }
 
 .Red-Accent {
   width: 80%;
   right: -6%;
   bottom: 0;
+  @media screen and (-ms-high-contrast: active), screen and (-ms-high-contrast: none) {  
+    padding-bottom: 25%;
+ }
 }
 
 .Hand {
   width: 20%;
   right: 28%;
   bottom: 0;
+  @media screen and (-ms-high-contrast: active), screen and (-ms-high-contrast: none) {  
+    padding-bottom: 53%;
+ }
 }
 
 .Pink-Accent {
@@ -35,6 +48,9 @@ body {
   right: -1%;
   bottom: 0;
   mix-blend-mode: overlay;
+  @media screen and (-ms-high-contrast: active), screen and (-ms-high-contrast: none) {  
+    padding-bottom: 20%;
+ }
 }
 
 /* Add Screen */
