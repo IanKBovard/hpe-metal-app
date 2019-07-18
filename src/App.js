@@ -6,7 +6,7 @@ import Signup from '../src/containers/signup';
 
 function App() {
   return (
-    <Grommet full theme={hpe}>
+    <Grommet theme={hpe}>
 {/*       <Signup /> */}
       <Loading />
     </Grommet>

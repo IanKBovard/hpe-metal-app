@@ -6,7 +6,7 @@ const RedAccent = () => {
       viewBox="0 0 1351 461"
       xmlns="http://www.w3.org/2000/svg"
       preserveAspectRatio="xMidYMin slice"
-      className="Accent SVG"
+      className="Red-Accent SVG"
     >
       <g id="Page-1" fill="none" fillRule="evenodd">
         <g id="metal-loading" transform="translate(-569 -619)" fill="#A2423D">

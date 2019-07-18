@@ -6,7 +6,7 @@ const YellowAccent = () => {
       viewBox="0 0 1449 514"
       xmlns="http://www.w3.org/2000/svg"
       preserveAspectRatio="xMidYMin slice"
-      className="Accent SVG"
+      className="Yellow-Accent SVG"
     >
       <g id="Page-1" fill="none" fillRule="evenodd">
         <g id="metal-loading" transform="translate(-471 -566)" fill="#FFAA15">

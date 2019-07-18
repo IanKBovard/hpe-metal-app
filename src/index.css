@@ -8,31 +8,32 @@ body {
 
 .SVG {
   position: absolute;
-  height: 1px;
-  overflow: visible;
 }
 
 /* Loading Screen */
 
-.Accent {
-  width: 100%;
-  right: -10%;
+.Yellow-Accent {
+  width: 80%;
+  right: 0;
   bottom: 0;
-  padding-bottom: 12.5%;
+}
+
+.Red-Accent {
+  width: 80%;
+  right: -6%;
+  bottom: 0;
 }
 
 .Hand {
   width: 20%;
-  right: 30%;
+  right: 28%;
   bottom: 0;
-  padding-bottom: 47%;
 }
 
 .Pink-Accent {
-  width: 100%;
-  right: -10%;
+  width: 80%;
+  right: -1%;
   bottom: 0;
-  padding-bottom: 6.5%;
   mix-blend-mode: overlay;
 }
 
