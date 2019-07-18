@@ -5,7 +5,7 @@ const YellowAccent = () => {
     <svg
       viewBox="0 0 1449 514"
       xmlns="http://www.w3.org/2000/svg"
-      className="Accent SVG"
+      xmlnsXlink="http://www.w3.org/1999/xlink"
     >
       <g id="Page-1" fill="none" fillRule="evenodd">
         <g id="metal-loading" transform="translate(-471 -566)" fill="#FFAA15">

@@ -12,7 +12,13 @@ body {
 
 /* Loading Screen */
 
-.Accent {
+.Yellow-Accent {
+  width: 80%;
+  right: 0;
+  bottom: 0;
+}
+
+.Red-Accent {
   width: 80%;
   right: 0;
   bottom: 0;

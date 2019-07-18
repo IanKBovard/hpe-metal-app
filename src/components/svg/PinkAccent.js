@@ -5,7 +5,7 @@ const PinkAccent = () => {
     <svg
       viewBox="0 0 1422 402"
       xmlns="http://www.w3.org/2000/svg"
-      className="Pink-Accent SVG"
+      xmlnsXlink="http://www.w3.org/1999/xlink"
     >
       <g id="Page-1" fill="none" fillRule="evenodd">
         <g id="metal-loading" transform="translate(-498 -678)" fill="#FD6FFF">
