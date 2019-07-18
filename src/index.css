@@ -36,7 +36,7 @@ body {
   mix-blend-mode: overlay;
 }
 
-/* Add Screen */
+/* Signup Screen */
 
 .Anchor {
   width: 15%;
@@ -52,7 +52,7 @@ body {
 
 .Button-Accent {
   width: 15%;
-  top:70%;
+  top: 65%;
   left: 50%;
   transform:translate(-50%,-50%);
 }
@@ -84,7 +84,7 @@ body {
 .Heart {
   width: 15%;
   left: 20%;
-  bottom: 5%;
+  bottom: 10%;
 }
 
 .Lightning-Blue {
@@ -129,26 +129,42 @@ body {
   top: 12%;
 }
 
-/* IE11  SVG */
+/* IE11 */
 
 @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  /* SVG IMGS */
   .SVG {
     height: 1px;
     overflow: visible; 
   }
+  /* Loading Screen */
+  .Hand {
+    padding-bottom: 53%;
+  }
+
+  .Pink-Accent {
+    padding-bottom: 20%;
+   }
+
+  .Red-Accent {
+     padding-bottom: 25%;
+   } 
+
   .Yellow-Accent {
     padding-bottom: 26%;
   }
   
-  .Red-Accent {
-    padding-bottom: 25%;
+  /* Signup Screen */
+
+  .Anchor {
+    bottom: 10%;
   }
-  
-  .Hand {
-    padding-bottom: 53%;
+
+  .Button-Accent {
+    top: 50%;
   }
-  
-  .Pink-Accent {
-    padding-bottom: 20%;
-   }
+
+  .Heart {
+    bottom: 35%;
+  }
 }
