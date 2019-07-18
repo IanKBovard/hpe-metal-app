@@ -35,29 +35,6 @@ body {
   bottom: 0;
   mix-blend-mode: overlay;
 }
-/* IE11  */
-
-@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
-  .SVG {
-    height: 1px;
-    overflow: visible; 
-  }
-  .Yellow-Accent {
-    padding-bottom: 26%;
-  }
-  
-  .Red-Accent {
-    padding-bottom: 25%;
-  }
-  
-  .Hand {
-    padding-bottom: 53%;
-  }
-  
-  .Pink-Accent {
-    padding-bottom: 20%;
-   }
-}
 
 /* Add Screen */
 
@@ -75,7 +52,9 @@ body {
 
 .Button-Accent {
   width: 15%;
-  bottom: 20%;
+  top:70%;
+  left: 50%;
+  transform:translate(-50%,-50%);
 }
 
 .Eye {
@@ -147,5 +126,29 @@ body {
 .Swords {
   width: 15%;
   left: 28%;
-  top: 15%;
+  top: 12%;
+}
+
+/* IE11  SVG */
+
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  .SVG {
+    height: 1px;
+    overflow: visible; 
+  }
+  .Yellow-Accent {
+    padding-bottom: 26%;
+  }
+  
+  .Red-Accent {
+    padding-bottom: 25%;
+  }
+  
+  .Hand {
+    padding-bottom: 53%;
+  }
+  
+  .Pink-Accent {
+    padding-bottom: 20%;
+   }
 }

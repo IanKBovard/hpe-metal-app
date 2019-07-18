@@ -25,17 +25,15 @@ const svgNamesHover = [
 const Signup = () => {
   return (
     <Layout background="#1F2532">
-      <Box align="center">
-        <TitleText1>You need more metal in</TitleText1>
-        <TitleText2>your life!</TitleText2>
-        <InfoText margin={{ top: 'medium' }}>
-          Just push the button to let the metal rain down!
-        </InfoText>
-      </Box>
+      <TitleText1>You need more metal in</TitleText1>
+      <TitleText2>your life!</TitleText2>
+      <InfoText margin={{ top: 'medium' }}>
+        Just push the button to let the metal rain down!
+      </InfoText>
         {svgNames.map(name => (
           <SVG name={name} />
         ))}
-        <Box align="center">
+        <Box>
           <SVG name="Button-Accent" />
         </Box>
     </Layout>

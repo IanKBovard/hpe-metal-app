@@ -15,6 +15,8 @@ export const TitleText1 = styled(Heading)`
   z-index: 100;
   white-space: nowrap;
   top: 18%;
+  left: 50%;
+  transform:translate(-50%,-50%);
 `;
 
 export const TitleText2 = styled(Heading)`
@@ -26,6 +28,8 @@ export const TitleText2 = styled(Heading)`
   z-index: 100;
   white-space: nowrap;
   top: 28%;
+  left: 50%;
+  transform:translate(-50%,-50%);
 `;
 
 export const InfoText = styled(Text)`
@@ -35,7 +39,9 @@ export const InfoText = styled(Text)`
   line-height: 0.8em;
   z-index: 100;
   white-space: nowrap;
-  top: 36%;
+  top: 33%;
+  left: 50%;
+  transform:translate(-50%,-50%);
 `;
 
 export const StyledButton = styled(Button)`
