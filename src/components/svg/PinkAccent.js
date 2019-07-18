@@ -5,6 +5,7 @@ const PinkAccent = () => {
     <svg
       viewBox="0 0 1422 402"
       xmlns="http://www.w3.org/2000/svg"
+      preserveAspectRatio="xMidYMin slice"
       className="Pink-Accent SVG"
     >
       <g id="Page-1" fill="none" fillRule="evenodd">
