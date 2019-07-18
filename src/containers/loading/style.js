@@ -4,7 +4,6 @@ import { Box, Text, Heading } from 'grommet';
 export const Layout = styled(Box)`
   position: relative;
   padding-top: 56.25%;
-  overflow: hidden;
 `;
 
 export const TitleText1 = styled(Heading)`

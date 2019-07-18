@@ -19,19 +19,19 @@ body {
 
 .Red-Accent {
   width: 80%;
-  right: -6%;
+  right: 0;
   bottom: 0;
 }
 
 .Hand {
   width: 20%;
-  right: 28%;
+  right: 32%;
   bottom: 0;
 }
 
 .Pink-Accent {
   width: 80%;
-  right: -1%;
+  right: 0;
   bottom: 0;
   mix-blend-mode: overlay;
 }

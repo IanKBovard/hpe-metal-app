@@ -33,9 +33,7 @@ const Signup = () => {
         {svgNamesHover.map(name => (
           <SVG name={name} />
         ))}
-        <Box>
-          <SVG name="Button-Accent" />
-        </Box>
+        <SVG name="Button-Accent" />
     </Layout>
   );
 };

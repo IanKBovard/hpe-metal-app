@@ -15,8 +15,7 @@ const svgNames = ['Red-Accent', 'Pink-Accent', 'Hand', 'Yellow-Accent'];
 
 const Loading = () => {
   return (
-    <Layout background="#1F2532">
-      <Box margin="large"></Box>
+    <Layout fill background="#1F2532">
       <TitleText1>Get ready for</TitleText1>
       <TitleText2>something</TitleText2>
       <TitleText3>wicked</TitleText3>
