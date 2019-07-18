@@ -24,7 +24,7 @@ const Loading = () => {
         prob, take me to <Anchor label="my portal" />.
       </InfoText2>
       {svgNames.map(name => (
-        <Box className={`${name} SVG`}><SVG name={name} /></Box>
+        <SVG name={name} />
       ))}
     </Layout>
   );
