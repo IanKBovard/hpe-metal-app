@@ -30,7 +30,7 @@ const Signup = () => {
       <InfoText margin={{ top: 'medium' }}>
         Just push the button to let the metal rain down!
       </InfoText>
-        {svgNames.map(name => (
+        {svgNamesHover.map(name => (
           <SVG name={name} />
         ))}
         <Box>

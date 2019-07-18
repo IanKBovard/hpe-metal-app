@@ -3,10 +3,9 @@ import React from 'react';
 const Flower = () => {
   return (
     <svg
-      width="328"
-      height="304"
       viewBox="0 0 328 304"
       xmlns="http://www.w3.org/2000/svg"
+      preserveAspectRatio="xMidYMin slice"
       className="Flower SVG"
     >
       <g id="Page-1" fill="none" fillRule="evenodd">

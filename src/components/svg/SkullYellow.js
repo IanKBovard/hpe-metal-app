@@ -3,10 +3,9 @@ import React from 'react';
 const SkullYellow = () => {
   return (
     <svg
-      width="177"
-      height="210"
       viewBox="0 0 177 210"
       xmlns="http://www.w3.org/2000/svg"
+      preserveAspectRatio="xMidYMin slice"
       className="Skull-Yellow SVG"
     >
       <g id="Page-1" fill="none" fillRule="evenodd">

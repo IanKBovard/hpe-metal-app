@@ -3,10 +3,9 @@ import React from 'react';
 const LightningGreen = () => {
   return (
     <svg
-      width="174"
-      height="246"
       viewBox="0 0 174 246"
       xmlns="http://www.w3.org/2000/svg"
+      preserveAspectRatio="xMidYMin slice"
       className="Lightning-Green SVG"
     >
       <g id="Page-1" fill="none" fillRule="evenodd">

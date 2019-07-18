@@ -3,10 +3,9 @@ import React from 'react';
 const GuitarPurple = () => {
   return (
     <svg
-      width="387"
-      height="523"
       viewBox="0 0 387 523"
       xmlns="http://www.w3.org/2000/svg"
+      preserveAspectRatio="xMidYMin slice"
       className="Guitar-Purple SVG"
     >
       <g id="Page-1" fill="none" fillRule="evenodd">
