@@ -3,10 +3,9 @@ import React from 'react';
 const Anchor = () => {
   return (
     <svg
-      width="227"
-      height="264"
       viewBox="0 0 227 264"
       xmlns="http://www.w3.org/2000/svg"
+      preserveAspectRatio="xMidYMin slice"
       className="Anchor SVG"
     >
       <g id="Page-1" fill="none" fillRule="evenodd">

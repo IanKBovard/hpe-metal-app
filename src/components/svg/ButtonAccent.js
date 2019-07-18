@@ -3,10 +3,9 @@ import React from 'react';
 const PinkAccent = () => {
   return (
     <svg
-      width="250"
-      height="250"
       viewBox="0 0 250 250"
       xmlns="http://www.w3.org/2000/svg"
+      preserveAspectRatio="xMidYMin slice"
       className="Button-Accent SVG"
     >
       <g id="Page-1" fill="none" fillRule="evenodd">

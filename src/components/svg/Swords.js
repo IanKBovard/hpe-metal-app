@@ -3,10 +3,9 @@ import React from 'react';
 const Swords = () => {
   return (
     <svg
-      width="331"
-      height="277"
       viewBox="0 0 331 277"
       xmlns="http://www.w3.org/2000/svg"
+      preserveAspectRatio="xMidYMin slice"
       className="Swords SVG"
     >
       <g id="Page-1" fill="none" fillRule="evenodd">

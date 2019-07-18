@@ -3,31 +3,29 @@ import {Box} from 'grommet';
 
 import SVG from '../../components/svg/index';
 import {
-  SignupLayout,
-  StyledBox,
+  Layout,
   TitleText1,
   TitleText2,
   InfoText,
 } from './style';
 
-const svgNames = ['eye', 'swords', 'bird', 'heart', 'anchor'];
+const svgNames = ['Eye', 'Swords', 'Bird', 'Heart', 'Anchor'];
 const svgNamesHover = [
-  'flower',
-  'skull yellow',
-  'lightning purple',
-  'guitar green',
-  'skull blue',
-  'lightning blue',
-  'skull red',
-  'lightning green',
-  'guitar purple',
+  'Flower',
+  'Skull-Yellow',
+  'Lightning-Purple',
+  'Guitar-Green',
+  'Skull-Blue',
+  'Lightning-Blue',
+  'Skull-Red',
+  'Lightning-Green',
+  'Guitar-Purple',
 ];
 
 const Signup = () => {
   return (
-    <SignupLayout fill background="#1F2532">
-      <StyledBox>
-      <Box>
+    <Layout background="#1F2532">
+      <Box align="center">
         <TitleText1>You need more metal in</TitleText1>
         <TitleText2>your life!</TitleText2>
         <InfoText margin={{ top: 'medium' }}>
@@ -37,11 +35,10 @@ const Signup = () => {
         {svgNames.map(name => (
           <SVG name={name} />
         ))}
-        <Box>
-          <SVG name="button accent" />
+        <Box align="center">
+          <SVG name="Button-Accent" />
         </Box>
-      </StyledBox>
-    </SignupLayout>
+    </Layout>
   );
 };
 

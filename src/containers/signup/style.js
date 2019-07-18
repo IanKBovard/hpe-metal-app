@@ -1,9 +1,9 @@
 import styled from 'styled-components';
 import { Box, Text, Heading, Button } from 'grommet';
 
-export const SignupLayout = styled(Box)`
-  min-height: 700px;
-  height: 100%;
+export const Layout = styled(Box)`
+  position: relative;
+  padding-top: 56.25%;
 `;
 
 export const TitleText1 = styled(Heading)`
@@ -36,11 +36,6 @@ export const InfoText = styled(Text)`
   z-index: 100;
   white-space: nowrap;
   top: 36%;
-`;
-
-export const StyledBox = styled(Box)`
-  position: relative;
-  padding-top: 56.25%;
 `;
 
 export const StyledButton = styled(Button)`

@@ -3,10 +3,9 @@ import React from 'react';
 const Eye = () => {
   return (
     <svg
-      width="200"
-      height="181"
       viewBox="0 0 200 181"
       xmlns="http://www.w3.org/2000/svg"
+      preserveAspectRatio="xMidYMin slice"
       className="Eye SVG"
     >
       <g id="Page-1" fill="none" fillRule="evenodd">

@@ -31,35 +31,35 @@ const SVG = props => {
       return <YellowAccent />;
     case 'Pink-Accent':
       return <PinkAccent />;
-    case 'anchor':
+    case 'Anchor':
       return <Anchor />;
-    case 'bird':
+    case 'Bird':
       return <Bird />;
-    case 'button accent':
+    case 'Button-Accent':
       return <ButtonAccent />;
-    case 'eye':
+    case 'Eye':
       return <Eye />;
-    case 'flower':
+    case 'Flower':
       return <Flower />;
-    case 'guitar green':
+    case 'Guitar-Green':
       return <GuitarGreen />;
-    case 'guitar purple':
+    case 'Guitar-Purple':
       return <GuitarPurple />;
-    case 'heart':
+    case 'Heart':
       return <Heart />;
-    case 'lightning blue':
+    case 'Lightning-Blue':
       return <LightningBlue />;
-    case 'lightning green':
+    case 'Lightning-Green':
       return <LightningGreen />;
-    case 'lightning purple':
+    case 'Lightning-Purple':
       return <LightningPurple />;
-    case 'skull blue':
+    case 'Skull-Blue':
       return <SkullBlue />;
-    case 'skull red':
+    case 'Skull-Red':
       return <SkullRed />;
-    case 'skull yellow':
+    case 'Skull-Yellow':
       return <SkullYellow />;
-    case 'swords':
+    case 'Swords':
       return <Swords />;
     default:
       return;
