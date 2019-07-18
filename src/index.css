@@ -137,22 +137,6 @@ body {
     height: 1px;
     overflow: visible; 
   }
-  /* Loading Screen */
-  .Hand {
-    padding-bottom: 53%;
-  }
-
-  .Pink-Accent {
-    padding-bottom: 20%;
-   }
-
-  .Red-Accent {
-     padding-bottom: 25%;
-   } 
-
-  .Yellow-Accent {
-    padding-bottom: 26%;
-  }
   
   /* Signup Screen */
 
