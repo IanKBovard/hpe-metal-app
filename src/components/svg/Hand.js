@@ -6,7 +6,6 @@ const Hand = () => {
       viewBox="0 0 342 943"
       xmlns="http://www.w3.org/2000/svg"
       xmlnsXlink="http://www.w3.org/1999/xlink"
-      preserveAspectRatio="xMidYMin slice"
       className="Hand SVG"
     >
       <defs>
