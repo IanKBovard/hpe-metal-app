@@ -13,7 +13,6 @@ export const TitleText1 = styled(Heading)`
   line-height: 0.8em;
   margin: 0px;
   z-index: 100;
-  white-space: nowrap;
   top: 18%;
   left: 50%;
   transform:translate(-50%,-50%);
@@ -26,7 +25,6 @@ export const TitleText2 = styled(Heading)`
   line-height: 0.8em;
   margin: 0px;
   z-index: 100;
-  white-space: nowrap;
   top: 28%;
   left: 50%;
   transform:translate(-50%,-50%);
@@ -38,7 +36,6 @@ export const InfoText = styled(Text)`
   font-weight: 200;
   line-height: 0.8em;
   z-index: 100;
-  white-space: nowrap;
   top: 33%;
   left: 50%;
   transform:translate(-50%,-50%);
