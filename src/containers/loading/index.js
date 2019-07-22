@@ -3,11 +3,8 @@ import { Anchor, Box } from 'grommet';
 
 import SVG from '../../components/svg/index';
 import {
-  TitleText1,
-  TitleText2,
-  TitleText3,
-  InfoText1,
-  InfoText2,
+  TitleText,
+  InfoText,
   Layout,
 } from './style';
 
@@ -15,19 +12,25 @@ const svgNames = ['Red-Accent', 'Pink-Accent', 'Hand', 'Yellow-Accent'];
 
 const Loading = () => {
   return (
-    <Layout background="#1F2532">
-      <TitleText1>Get ready for</TitleText1>
-      <TitleText2>something</TitleText2>
-      <TitleText3>wicked</TitleText3>
-      <InfoText1>Taking you to your server! Can't wait? No</InfoText1>
-      <InfoText2>
+    <Layout fill background="#1F2532">
+    <Box style={{position: 'absolute', top: '30%', left: '25%',   transform: 'translate(-50%,-50%)'}}>
+      <TitleText>Get ready for</TitleText>
+      <TitleText>something</TitleText>
+      <TitleText>wicked</TitleText>
+      <InfoText>Taking you to your server! Can't wait? No</InfoText>
+      <InfoText>
         prob, take me to <Anchor label="my portal" />.
-      </InfoText2>
-      <Box style={{overflow: 'hidden'}}>
+      </InfoText>
+    </Box>
+    <Box style={{overflow: 'hidden'}}>
         {svgNames.map(name => (
+          <Box style={{overflow: 'hidden'}}>
+
           <SVG name={name} />
+          </Box>
         ))}
-      </Box>
+
+    </Box>
     </Layout>
   );
 };
