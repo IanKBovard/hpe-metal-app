@@ -22,15 +22,9 @@ const Loading = () => {
         prob, take me to <Anchor label="my portal" />.
       </InfoText>
     </Box>
-    <Box style={{overflow: 'hidden'}}>
         {svgNames.map(name => (
-          <Box style={{overflow: 'hidden'}}>
-
           <SVG name={name} />
-          </Box>
         ))}
-
-    </Box>
     </Layout>
   );
 };
