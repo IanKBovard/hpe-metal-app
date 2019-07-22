@@ -130,16 +130,34 @@ body {
 }
 
 /* IE11 */
-
 @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
   /* SVG IMGS */
+
   .SVG {
     height: 1px;
     overflow: visible; 
   }
-  
-  /* Signup Screen */
 
+  /* Loading Screen */
+
+  .Hand {
+    padding-bottom: 55%;
+  }
+
+  .Pink-Accent {
+    padding-bottom: 23.5%;
+  }
+
+  .Red-Accent {
+    padding-bottom: 28%;
+  }
+
+  .Yellow-Accent {
+    padding-bottom: 29%;
+  }
+
+  /* Signup Screen */
+  
   .Anchor {
     bottom: 20%;
   }
