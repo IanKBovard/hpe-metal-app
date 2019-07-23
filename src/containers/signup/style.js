@@ -22,6 +22,10 @@ export const InfoText = styled(Text)`
 export const StyledButton = styled(Button)`
   box-shadow: 0px 3px 3px 3px black;
   border-radius: 50%;
+  position: absolute;
+  top: 62%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 `;
 
 export const TextContainer = styled(Box)`

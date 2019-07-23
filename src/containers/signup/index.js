@@ -1,8 +1,13 @@
 import React from 'react';
-import { Box } from 'grommet';
-
+import { Add } from 'grommet-icons';
 import SVG from '../../components/svg/index';
-import { Layout, TitleText, InfoText, TextContainer } from './style';
+import {
+  Layout,
+  TitleText,
+  InfoText,
+  TextContainer,
+  StyledButton,
+} from './style';
 
 const svgNames = ['Eye', 'Swords', 'Bird', 'Heart', 'Anchor'];
 const svgNamesHover = [
@@ -31,6 +36,11 @@ const Signup = () => {
         <SVG name={name} />
       ))}
       <SVG name="Button-Accent" />
+      <StyledButton
+        color="#9060EB"
+        primary
+        icon={<Add size="large" color="#ffffff" />}
+      />
     </Layout>
   );
 };
