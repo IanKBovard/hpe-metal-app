@@ -21,3 +21,8 @@ export const InfoText = styled(Text)`
   font-weight: 200;
   line-height: 0.8em;
 `;
+
+export const TextContainer = styled(Box)`
+  position: absolute;
+  top: 20%;
+`;

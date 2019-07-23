@@ -7,8 +7,8 @@ import Signup from '../src/containers/signup';
 function App() {
   return (
     <Grommet full theme={hpe}>
-{/*       <Signup /> */}
-      <Loading />
+      <Signup />
+      {/*       <Loading /> */}
     </Grommet>
   );
 }

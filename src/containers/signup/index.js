@@ -1,13 +1,8 @@
 import React from 'react';
-import {Box} from 'grommet';
+import { Box } from 'grommet';
 
 import SVG from '../../components/svg/index';
-import {
-  Layout,
-  TitleText1,
-  TitleText2,
-  InfoText,
-} from './style';
+import { Layout, TitleText, InfoText, TextContainer } from './style';
 
 const svgNames = ['Eye', 'Swords', 'Bird', 'Heart', 'Anchor'];
 const svgNamesHover = [
@@ -25,15 +20,17 @@ const svgNamesHover = [
 const Signup = () => {
   return (
     <Layout background="#1F2532">
-      <TitleText1>You need more metal in</TitleText1>
-      <TitleText2>your life!</TitleText2>
-      <InfoText margin={{ top: 'medium' }}>
-        Just push the button to let the metal rain down!
-      </InfoText>
-        {svgNamesHover.map(name => (
-          <SVG name={name} />
-        ))}
-        <SVG name="Button-Accent" />
+      <TextContainer align="center" alignSelf="center">
+        <TitleText>You need more metal in</TitleText>
+        <TitleText>your life!</TitleText>
+        <InfoText margin={{ top: 'medium' }}>
+          Just push the button to let the metal rain down!
+        </InfoText>
+      </TextContainer>
+      {svgNamesHover.map(name => (
+        <SVG name={name} />
+      ))}
+      <SVG name="Button-Accent" />
     </Layout>
   );
 };

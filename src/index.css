@@ -54,7 +54,7 @@ body {
   width: 15%;
   top: 65%;
   left: 50%;
-  transform:translate(-50%,-50%);
+  transform: translate(-50%, -50%);
 }
 
 .Eye {
@@ -135,7 +135,7 @@ body {
 
   .SVG {
     height: 1px;
-    overflow: visible; 
+    overflow: visible;
   }
 
   /* Loading Screen */
@@ -157,7 +157,7 @@ body {
   }
 
   /* Signup Screen */
-  
+
   .Anchor {
     bottom: 20%;
   }
@@ -165,11 +165,11 @@ body {
   .Button-Accent {
     top: 50%;
   }
-  
+
   .Guitar-Green {
     bottom: 62%;
   }
-  
+
   .Guitar-Purple {
     right: 24%;
     bottom: 26%;
@@ -182,7 +182,7 @@ body {
   .Lightning-Blue {
     bottom: 60%;
   }
-  
+
   .Lightning-Green {
     bottom: 20%;
   }
