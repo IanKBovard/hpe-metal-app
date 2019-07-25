@@ -23,8 +23,8 @@ const Loading = () => {
         prob, take me to <Anchor label="my portal" />.
       </InfoText>
     </TextContainer>
-        {svgNames.map(name => (
-          <SVG name={name} />
+        {svgNames.map((name, index) => (
+          <SVG key={index} name={name} />
         ))}
     </Layout>
   );
