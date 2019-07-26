@@ -43,7 +43,7 @@ const Signup = () => {
       <SVG name="Button-Accent" />
       <CircleAnchor onClick={() => console.log('You clicked me!')} />
     </Layout> */
-    <Layout fill background="#1F2532">
+    <Layout background="#1F2532">
       <TextContainer align="center" alignSelf="center">
         <TitleText>Time to start jamming!</TitleText>
         <InfoText margin={{ top: '1%' }}>
