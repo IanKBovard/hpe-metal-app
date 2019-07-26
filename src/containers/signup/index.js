@@ -56,7 +56,8 @@ const Signup = () => {
         <Box
           margin={{ top: 'large' }}
           background="white"
-          width="50%"
+          width="55%"
+          height="450px"
           style={{
             borderRadius: '5%',
           }}
@@ -108,7 +109,7 @@ const Signup = () => {
             an hour by Hewlett Packard Financial Services and you will receive
             your very own physical server for the maximum amount of metal on HPE
             Servers! Speed drumming here we come! If you need to read it, we got
-            all the lawyer stuff that protects the artist and the venue
+            all the lawyer stuff that protects the artist and the venue.
           </LegalText>
         </Box>
       </TextContainer>
