@@ -2,8 +2,6 @@ import styled from 'styled-components';
 import { Box, Text, Heading, Anchor, TextInput, Button } from 'grommet';
 
 export const Layout = styled(Box)`
-  position: relative;
-  padding-top: 56.25%;
 `;
 
 export const TitleText = styled(Heading)`
@@ -20,7 +18,7 @@ export const InfoText = styled(Text)`
 `;
 
 export const LegalText = styled(Text)`
-  font-size: 1.5vw;
+  font-size: 1vw;
   font-weight: 200;
   line-height: 0.9em;
 `;
