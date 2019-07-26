@@ -5,7 +5,7 @@ export const Layout = styled(Box)`
   position: relative;
   padding-top: 56.25%;
   @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
-    overflow-x: hidden;
+    overflow: visible;
   }
 `;
 
