@@ -43,6 +43,7 @@ const Signup = () => {
       <SVG name="Button-Accent" />
       <CircleAnchor onClick={() => console.log('You clicked me!')} />
     </Layout> */
+    <Box style={{overflowx: 'hidden'}}>
     <Layout background="#1F2532">
       <TextContainer align="center" alignSelf="center">
         <TitleText>Time to start jamming!</TitleText>
@@ -116,6 +117,7 @@ const Signup = () => {
         <SVG key={index} name={name} />
       ))}
     </Layout>
+    </Box>
   );
 };
 
