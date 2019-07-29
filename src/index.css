@@ -10,30 +10,75 @@ body {
   position: absolute;
 }
 /* Loading Screen */
-
 .Yellow-Accent {
-  width: 80%;
-  right: 0;
+  width: 120%;
+  left: 0;
   bottom: 0;
 }
 
 .Red-Accent {
-  width: 80%;
-  right: 0;
+  width: 120%;
+  left: 0;
   bottom: 0;
 }
 
 .Hand {
-  width: 20%;
-  right: 32%;
+  width: 42%;
+  right: 25%;
   bottom: 0;
 }
 
 .Pink-Accent {
-  width: 80%;
-  right: 0;
+  width: 120%;
+  left: 0;
   bottom: 0;
   mix-blend-mode: overlay;
+}
+
+@media only screen and (min-width: 768px) {
+  .Yellow-Accent {
+    width: 110%;
+  }
+
+  .Red-Accent {
+    width: 110%;
+  }
+
+  .Hand {
+    width: 30%;
+    right: 32%;
+    bottom: 0;
+  }
+
+  .Pink-Accent {
+    width: 110%;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .Yellow-Accent {
+    width: 80%;
+    right: 0%;
+    left: auto;
+  }
+
+  .Red-Accent {
+    width: 80%;
+    right: 0;
+    left: auto;
+  }
+
+  .Hand {
+    width: 20%;
+    right: 35%;
+    bottom: 0;
+  }
+
+  .Pink-Accent {
+    width: 80%;
+    right: 0;
+    left: auto;
+  }
 }
 
 /* Signup Screen */
