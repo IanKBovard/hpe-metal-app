@@ -53,6 +53,11 @@ body {
   .Pink-Accent {
     width: 110%;
   }
+  @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+    .Hand {
+      padding-bottom: 80%;
+    }
+  }
 }
 
 @media only screen and (min-width: 1024px) {
@@ -78,6 +83,22 @@ body {
     width: 80%;
     right: 0;
     left: auto;
+  }
+  @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+    .Hand {
+      padding-bottom: 55%;
+    }
+    .Pink-Accent {
+      padding-bottom: 23.5%;
+    }
+
+    .Red-Accent {
+      padding-bottom: 28%;
+    }
+
+    .Yellow-Accent {
+      padding-bottom: 29%;
+    }
   }
 }
 
@@ -200,27 +221,6 @@ body {
 
   .Yellow-Accent {
     padding-bottom: 39%;
-  }
-  @media only screen and (min-width: 768px) {
-    .Hand {
-      padding-bottom: 80%;
-    }
-  }
-  @media only screen and (min-width: 1024px) {
-    .Hand {
-      padding-bottom: 55%;
-    }
-    .Pink-Accent {
-      padding-bottom: 23.5%;
-    }
-
-    .Red-Accent {
-      padding-bottom: 28%;
-    }
-
-    .Yellow-Accent {
-      padding-bottom: 29%;
-    }
   }
 }
 /* Signup Screen */
