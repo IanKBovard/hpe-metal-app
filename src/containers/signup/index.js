@@ -8,10 +8,11 @@ import {
   InfoText,
   LegalText,
   TextContainer,
-  CircleAnchor,
   Input,
   InputCard,
   SubmitButton,
+  AddButton,
+  AddIcon,
 } from './style';
 
 const svgNames = ['Eye', 'Swords', 'Bird', 'Heart', 'Anchor'];
@@ -30,7 +31,7 @@ const svgNamesHover = [
 const Signup = () => {
   return (
     <Layout fill background="#1F2532" pad={{ top: 'xlarge' }}>
-      <TextContainer margin={{top: 'xlarge'}} fill="horizontal">
+      <TextContainer margin={{ top: 'xlarge' }} fill="horizontal">
         <TitleText>You need more metal in</TitleText>
         <TitleText>your life!</TitleText>
         <InfoText margin={{ top: 'small' }}>
@@ -38,9 +39,10 @@ const Signup = () => {
         </InfoText>
       </TextContainer>
       {svgNamesHover.map((name, index) => (
-          <SVG key={index} name={name} />
+        <SVG key={index} name={name} />
       ))}
       <SVG name="Button-Accent" />
+      <AddButton primary icon={ <AddIcon size="medium" color="#ffffff"/>}/>
     </Layout>
     /*     <Layout background="#1F2532">
       <TextContainer align="center" alignSelf="center">

@@ -15,10 +15,10 @@ const hpeCustom = deepMerge(hpe, {
 function App() {
   return (
     <Grommet full theme={hpeCustom}>
-      {/*     <Box full align="center">
+    <Box fill align="center" style={{overflowX: 'hidden'}}>
       <Signup/>
-    </Box> */}
-      <Loading />
+    </Box>
+      {/*                          <Loading /> */}
     </Grommet>
   );
 }

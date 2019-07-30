@@ -3,7 +3,6 @@ body {
   padding: 0;
   background: #1f2532;
 }
-
 /* SVG IMGS */
 
 .SVG {
@@ -53,11 +52,6 @@ body {
   .Pink-Accent {
     width: 110%;
   }
-  @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
-    .Hand {
-      padding-bottom: 80%;
-    }
-  }
 }
 
 @media only screen and (min-width: 1024px) {
@@ -84,22 +78,6 @@ body {
     right: 0;
     left: auto;
   }
-  @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
-    .Hand {
-      padding-bottom: 55%;
-    }
-    .Pink-Accent {
-      padding-bottom: 23.5%;
-    }
-
-    .Red-Accent {
-      padding-bottom: 28%;
-    }
-
-    .Yellow-Accent {
-      padding-bottom: 29%;
-    }
-  }
 }
 
 /* Signup Screen */
@@ -117,8 +95,8 @@ body {
 }
 
 .Button-Accent {
-  width: 40%;
-  top: 220px;
+  width: 30%;
+  top: 250px;
   left: 0;
   right: 0;
   margin: auto;
@@ -196,6 +174,69 @@ body {
   top: 10%;
 }
 
+@media only screen and (min-width: 768px) {
+  .Button-Accent {
+    width: 30%;
+    top: 500px;
+    left: 0;
+    right: 0;
+    margin: auto;
+  }
+  
+  .Flower {
+    width: 30%;
+    top: -155px;
+    left: 10px;
+  }
+  
+  .Guitar-Green {
+    width: 40%;
+    left: -200px;
+    top: 400px;
+  }
+  
+  .Guitar-Purple {
+    width: 40%;
+    right: 0px;
+    bottom: -420px;
+  }
+  
+  .Lightning-Blue {
+    width: 15%;
+    right: 140px;
+    top: 400px;
+  }
+  
+  .Lightning-Green {
+    width: 15%;
+    left: 150px;
+    bottom: -90px;
+  }
+  
+  .Lightning-Purple {
+    width: 15%;
+    left: 300px;
+    top: 100px;
+  }
+  
+  .Skull-Blue {
+    width: 15%;
+    left: 140px;
+    bottom: 250px;
+  }
+  
+  .Skull-Yellow {
+    width: 15%;
+    right: 150px;
+    top: -50px;
+  }
+  
+  .Skull-Red {
+    width: 15%;
+    right: 10px;
+    bottom: 280px;
+  }
+}
 /* IE11 */
 @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
   /* SVG IMGS */
@@ -221,6 +262,27 @@ body {
 
   .Yellow-Accent {
     padding-bottom: 39%;
+  }
+  @media only screen and (min-width: 768px) {
+    .Hand {
+      padding-bottom: 80%;
+    }
+  }
+  @media only screen and (min-width: 1024px) {
+    .Hand {
+      padding-bottom: 55%;
+    }
+    .Pink-Accent {
+      padding-bottom: 23.5%;
+    }
+
+    .Red-Accent {
+      padding-bottom: 28%;
+    }
+
+    .Yellow-Accent {
+      padding-bottom: 29%;
+    }
   }
 }
 /* Signup Screen */
