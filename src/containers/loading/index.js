@@ -13,14 +13,16 @@ const Loading = () => {
         <TitleText>Get ready for</TitleText>
         <TitleText>something</TitleText>
         <TitleText>wicked</TitleText>
-        <InfoText margin={{ top: 'small'}}>Taking you to your server! Can't wait? No</InfoText>
+        <InfoText margin={{ top: 'small' }}>
+          Taking you to your server! Can't wait? No
+        </InfoText>
         <InfoText>
           prob, take me to <Anchor label="my portal" />.
         </InfoText>
       </TextContainer>
-        {svgNames.map((name, index) => (
-          <SVG key={index} name={name} />
-        ))}
+      {svgNames.map((name, index) => (
+        <SVG key={index} name={name} />
+      ))}
     </Layout>
   );
 };

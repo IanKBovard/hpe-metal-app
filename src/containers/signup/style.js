@@ -1,25 +1,23 @@
 import styled from 'styled-components';
 import { Box, Text, Heading, Anchor, TextInput, Button } from 'grommet';
 
-export const SignupWrapper = styled(Box)`
-  @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
-    overflow-x: hidden;
-  }
-`
 export const Layout = styled(Box)`
   position: relative;
-  padding-top: 56.25%;
+  max-height: 640px;
+  max-width: 360px;
+  min-height: 568px;
+  min-width: 320px;
 `;
 
 export const TitleText = styled(Heading)`
-  font-size: 6vw;
+  font-size: 8vw;
   font-weight: 900;
   line-height: 0.8em;
   margin: 0px;
 `;
 
 export const InfoText = styled(Text)`
-  font-size: 2.5vw;
+  font-size: 4vw;
   font-weight: 200;
   line-height: 0.9em;
 `;
@@ -42,27 +40,23 @@ export const CircleAnchor = styled(Anchor)`
 `;
 
 export const TextContainer = styled(Box)`
-  position: absolute;
   z-index: 100;
-  top: 20%;
-  left: 0;
-  right: 0;
-  margin: auto;
+  text-align: center;
 `;
 
 export const Input = styled(TextInput)`
-  border: 2px solid #CCCCCC;
+  border: 2px solid #cccccc;
   border-radius: 4px;
   height: 55px;
-`
+`;
 
 export const InputCard = styled(TextInput)`
-  border: 2px solid #CCCCCC;
+  border: 2px solid #cccccc;
   border-radius: 4px;
   height: 55px;
   text-align: center;
-`
+`;
 
 export const SubmitButton = styled(Button)`
   border-radius: 50px;
-`
+`;

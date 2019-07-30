@@ -4,9 +4,7 @@ import { Box, Text, Heading } from 'grommet';
 export const Layout = styled(Box)`
   position: relative;
   min-height: 320px;
-  @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
-    overflow: hidden;
-  }
+  overflow: hidden;
   @media only screen and (min-width: 768px) {
     min-height: 900px;
   }
@@ -38,11 +36,13 @@ export const TextContainer = styled(Box)`
   z-index: 100;
   top: 5%;
   position: absolute;
-  align-self: center;
+  left: 0;
+  right: 0;
   align-items: center;
   @media only screen and (min-width: 1024px) {
     top: 15%;
-    align-self: auto;
+    left: auto;
+    right: auto;
     align-items: start;
   }
 `;

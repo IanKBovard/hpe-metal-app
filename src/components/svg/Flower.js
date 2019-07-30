@@ -5,8 +5,8 @@ const Flower = () => {
     <svg
       viewBox="0 0 328 304"
       xmlns="http://www.w3.org/2000/svg"
-      preserveAspectRatio="xMidYMin slice"
       className="Flower SVG"
+      preserveAspectRatio="xMidYMin slice"
     >
       <g id="Page-1" fill="none" fillRule="evenodd">
         <g

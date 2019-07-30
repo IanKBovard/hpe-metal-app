@@ -29,21 +29,20 @@ const svgNamesHover = [
 
 const Signup = () => {
   return (
-    /*     <Layout background="#1F2532">
-      <TextContainer align="center" alignSelf="center">
+    <Layout fill background="#1F2532" pad={{ top: 'xlarge' }}>
+      <TextContainer margin={{top: 'xlarge'}} fill="horizontal">
         <TitleText>You need more metal in</TitleText>
         <TitleText>your life!</TitleText>
-        <InfoText margin={{ top: '1%' }}>
+        <InfoText margin={{ top: 'small' }}>
           Just push the button to let the metal rain down!
         </InfoText>
       </TextContainer>
       {svgNamesHover.map((name, index) => (
-        <SVG key={index} name={name} />
+          <SVG key={index} name={name} />
       ))}
       <SVG name="Button-Accent" />
-      <CircleAnchor onClick={() => console.log('You clicked me!')} />
-    </Layout> */
-    <Layout background="#1F2532">
+    </Layout>
+    /*     <Layout background="#1F2532">
       <TextContainer align="center" alignSelf="center">
         <TitleText>Time to start jamming!</TitleText>
         <InfoText margin={{ top: '1%' }}>
@@ -62,7 +61,12 @@ const Signup = () => {
             borderRadius: '5%',
           }}
           direction="column"
-          pad={{ top: 'large', left: 'xlarge', right: 'xlarge', bottom: 'large' }}
+          pad={{
+            top: 'large',
+            left: 'xlarge',
+            right: 'xlarge',
+            bottom: 'large',
+          }}
         >
           <Form>
             <FormField htmlFor="name">
@@ -116,7 +120,7 @@ const Signup = () => {
       {svgNamesHover.map((name, index) => (
         <SVG key={index} name={name} />
       ))}
-    </Layout>
+    </Layout> */
   );
 };
 
