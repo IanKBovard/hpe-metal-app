@@ -56,10 +56,6 @@ export const AddButton = styled(Button)`
   @media only screen and (min-width: 768px) {
     padding: 15px;
     top: 565px;
-    _:-ms-fullscreen,
-    :root {
-      left: 472px;
-    }
   }
   @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
     left: 157px;
@@ -92,9 +88,6 @@ export const FormWrapper = styled(Box)`
   @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
     height: 500px;
     top: 170px;
-    @media only screen and (min-width: 768px) {
-      top: 300px;
-    }
   }
 `;
 

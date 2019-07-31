@@ -221,6 +221,7 @@ body {
     padding-bottom: 80%;
   }
   /* Signup */
+
   .Button-Accent {
     width: 20%;
     top: 500px;
@@ -281,6 +282,16 @@ body {
     width: 15%;
     right: 10px;
     bottom: 280px;
+  }
+
+  _:-ms-fullscreen,
+  :root .form-wrapper {
+    top: 300px;
+  }
+
+  _:-ms-fullscreen,
+  :root .add-button{
+    left: 472px;
   }
 }
 

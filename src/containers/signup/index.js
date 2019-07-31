@@ -42,7 +42,7 @@ const Signup = () => {
         <SVG key={index} name={name} />
       ))}
       <SVG name="Button-Accent" />
-      <AddButton primary icon={<AddIcon size="medium" color="#ffffff" />} />
+      <AddButton className="add-button" primary icon={<AddIcon size="medium" color="#ffffff" />} />
     </Layout> */
     <Layout background="#1F2532">
       <TextContainer margin={{ top: 'xlarge' }}>
@@ -54,7 +54,7 @@ const Signup = () => {
           credit card, and done! We'll handle the rest. Let's make some
         </InfoText>
         <InfoText>music together.</InfoText>
-        <FormWrapper background="#ffffff" direction="column" pad="large">
+        <FormWrapper className="form-wrapper" background="#ffffff" direction="column" pad="large">
           <Button alignSelf="end" plain icon={<Close />} />
           <Box pad={{ left: 'medium', right: 'medium', top: 'small' }}>
             <Form>
