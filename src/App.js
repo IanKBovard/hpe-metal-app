@@ -17,12 +17,13 @@ const grommetCustom = deepMerge(grommet, {
 function App() {
   return (
     <Grommet full theme={grommetCustom}>
-{/*       <SignupWrapper fill background="#1F2532" align="center">
+      {/*      
+      <AddHost />
+      <Loading /> 
+    */}
+      <SignupWrapper fill background="#1F2532" align="center">
         <Signup />
       </SignupWrapper>
-      <AddHost />
-    */}
-      <Loading /> 
     </Grommet>
   );
 }
