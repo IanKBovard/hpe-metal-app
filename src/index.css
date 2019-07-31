@@ -96,7 +96,7 @@ body {
 
 .Button-Accent {
   width: 30%;
-  top: 250px;
+  top: 240px;
   left: 0;
   right: 0;
   margin: auto;
@@ -111,19 +111,19 @@ body {
 .Flower {
   width: 35%;
   top: -60px;
-  left: 10px;
+  left: -50px;
 }
 
 .Guitar-Green {
-  width: 65%;
-  left: -100px;
+  width: 45%;
+  left: -135px;
   top: 190px;
 }
 
 .Guitar-Purple {
   width: 55%;
-  right: -50px;
-  bottom: -80px;
+  right: -60px;
+  bottom: 20px;
 }
 
 .Heart {
@@ -133,27 +133,27 @@ body {
 }
 
 .Lightning-Blue {
-  width: 20%;
-  right: 40px;
-  top: 180px;
+  width: 16%;
+  right: 10px;
+  top: 200px;
 }
 
 .Lightning-Green {
   width: 20%;
-  left: 50px;
-  bottom: -10px;
+  left: 20px;
+  bottom: 150px;
 }
 
 .Lightning-Purple {
-  width: 20%;
-  left: 100px;
-  top: 35px;
+  width: 17%;
+  left: 90px;
+  top: 55px;
 }
 
 .Skull-Blue {
-  width: 20%;
-  left: 50px;
-  bottom: 150px;
+  width: 18%;
+  left: 30px;
+  bottom: 290px;
 }
 
 .Skull-Yellow {
@@ -164,8 +164,8 @@ body {
 
 .Skull-Red {
   width: 20%;
-  right: 10px;
-  bottom: 200px;
+  right: -60px;
+  bottom: 290px;
 }
 
 .Swords {
@@ -176,7 +176,7 @@ body {
 
 @media only screen and (min-width: 768px) {
   .Button-Accent {
-    width: 30%;
+    width: 20%;
     top: 500px;
     left: 0;
     right: 0;
@@ -191,26 +191,26 @@ body {
   
   .Guitar-Green {
     width: 40%;
-    left: -200px;
-    top: 400px;
+    left: -150px;
+    top: 380px;
   }
   
   .Guitar-Purple {
-    width: 40%;
-    right: 0px;
-    bottom: -420px;
+    width: 32%;
+    right: 100px;
+    bottom: -120px;
   }
   
   .Lightning-Blue {
     width: 15%;
-    right: 140px;
+    right: 200px;
     top: 400px;
   }
   
   .Lightning-Green {
     width: 15%;
-    left: 150px;
-    bottom: -90px;
+    left: 220px;
+    bottom: -10px;
   }
   
   .Lightning-Purple {
@@ -221,8 +221,8 @@ body {
   
   .Skull-Blue {
     width: 15%;
-    left: 140px;
-    bottom: 250px;
+    left: 220px;
+    bottom: 290px;
   }
   
   .Skull-Yellow {

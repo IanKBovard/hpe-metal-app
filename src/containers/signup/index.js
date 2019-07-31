@@ -1,6 +1,6 @@
 import React from 'react';
 import { Box, Form, FormField, Button } from 'grommet';
-import { Add, Info } from 'grommet-icons';
+import { Info, Close } from 'grommet-icons';
 import SVG from '../../components/svg/index';
 import {
   Layout,
@@ -10,7 +10,7 @@ import {
   TextContainer,
   Input,
   InputCard,
-  SubmitButton,
+  FormContainer,
   AddButton,
   AddIcon,
 } from './style';
@@ -30,7 +30,7 @@ const svgNamesHover = [
 
 const Signup = () => {
   return (
-    <Layout fill background="#1F2532" pad={{ top: 'xlarge' }}>
+    /*  <Layout fill background="#1F2532" pad={{ top: 'xlarge' }}>
       <TextContainer margin={{ top: 'xlarge' }} fill="horizontal">
         <TitleText>You need more metal in</TitleText>
         <TitleText>your life!</TitleText>
@@ -43,33 +43,29 @@ const Signup = () => {
       ))}
       <SVG name="Button-Accent" />
       <AddButton primary icon={ <AddIcon size="medium" color="#ffffff"/>}/>
-    </Layout>
-    /*     <Layout background="#1F2532">
-      <TextContainer align="center" alignSelf="center">
+    </Layout> */
+    <Layout background="#1F2532">
+      <TextContainer margin={{ top: 'xlarge' }}>
         <TitleText>Time to start jamming!</TitleText>
-        <InfoText margin={{ top: '1%' }}>
+        <InfoText margin={{ top: 'small' }}>
           Let's get you signed up. Sign up is easy! Just name, email,
         </InfoText>
         <InfoText>
-          credit card, and done! We'll handle the rest. Let's make some
+          credit card, and done! We'll handle the rest. Let's make some 
         </InfoText>
         <InfoText>music together.</InfoText>
-        <Box
-          margin={{ top: 'large' }}
-          background="white"
-          width="55%"
-          height="450px"
-          style={{
-            borderRadius: '5%',
-          }}
+        <FormContainer
+          background="#ffffff"
           direction="column"
-          pad={{
-            top: 'large',
-            left: 'xlarge',
-            right: 'xlarge',
-            bottom: 'large',
-          }}
+          pad="large"
         >
+          <Button
+            alignSelf="end"
+            plain
+            icon={<Close />}
+          />
+          <Box pad={{left: 'medium', right: 'medium', top: 'small'}}>
+
           <Form>
             <FormField htmlFor="name">
               <Input id="name" placeholder="Band Name" />
@@ -78,7 +74,7 @@ const Signup = () => {
               <Input id="email" placeholder="Email Address" />
             </FormField>
             <Box gap="small" direction="row-responsive">
-              <Box width="xlarge">
+              <Box width="large">
                 <FormField htmlFor="credit-card">
                   <Input id="credit-card" placeholder="Credit Card Number" />
                 </FormField>
@@ -101,28 +97,22 @@ const Signup = () => {
                 </Box>
               </Box>
             </Box>
-            <Box align="center" pad="medium" width="100%">
-              <SubmitButton
-                color="#7D4CDB"
-                primary
-                label="Let's Rock"
-                type="submit"
-              />
-            </Box>
           </Form>
-          <LegalText>
+          </Box>
+          <Button disabled="true" margin="medium" primary alignSelf="center" type="submit" color="brand" label="Let's Rock!" />
+          <LegalText justifySelf="end">
             Upon mashing the submit button your credit card with be charged 10¢
             an hour by Hewlett Packard Financial Services and you will receive
             your very own physical server for the maximum amount of metal on HPE
             Servers! Speed drumming here we come! If you need to read it, we got
             all the lawyer stuff that protects the artist and the venue.
           </LegalText>
-        </Box>
+        </FormContainer>
       </TextContainer>
       {svgNamesHover.map((name, index) => (
         <SVG key={index} name={name} />
       ))}
-    </Layout> */
+    </Layout>
   );
 };
 

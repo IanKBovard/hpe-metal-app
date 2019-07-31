@@ -1,7 +1,8 @@
 import styled from 'styled-components';
-import { Box, Text, Heading, TextInput, Button } from 'grommet';
-import { Add, Info } from 'grommet-icons';
+import { Box, Text, Heading, Button, TextInput } from 'grommet';
+import { Add } from 'grommet-icons';
 
+/* Layout and text */
 export const Layout = styled(Box)`
   position: relative;
   max-height: 640px;
@@ -17,7 +18,8 @@ export const Layout = styled(Box)`
 `;
 
 export const TitleText = styled(Heading)`
-  font-size: 26px;
+  max-width: 100%;
+  font-size: 32px;
   font-weight: 900;
   line-height: 0.8em;
   margin: 0px;
@@ -27,11 +29,11 @@ export const TitleText = styled(Heading)`
 `;
 
 export const InfoText = styled(Text)`
-  font-size: 14px;
-  font-weight: 200;
-  line-height: 0.9em;
+  font-size: 12px;
+  font-weight: 300;
+  line-height: 1em;
   @media only screen and (min-width: 768px) {
-    font-size: 42px;
+    font-size: 36px;
   }
 `;
 
@@ -40,10 +42,56 @@ export const TextContainer = styled(Box)`
   text-align: center;
 `;
 
+/* Open form button */
+export const AddButton = styled(Button)`
+  background-color: #9060eb;
+  border-radius: 50%;
+  align-self: center;
+  position: absolute;
+  top: 270px;
+  @media only screen and (min-width: 768px) {
+    padding: 15px;
+    top: 565px;
+  }
+  @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+    left: 157px;
+    @media only screen and (min-width: 768px) {
+      left: 457px;
+    }
+  }
+`;
+
+export const AddIcon = styled(Add)`
+  @media only screen and (min-width: 768px) {
+    width: 48px;
+    height: 48px;
+  }
+`;
+
+/* Form */
+export const FormContainer = styled(Box)`
+  height: 480px;
+  width: 360px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 140px;
+  margin: auto;
+  border-radius: 8%;
+  @media only screen and (min-width: 768px) {
+    height: 500px;
+    width: 650px;
+    top: 300px;
+  }
+`;
+
 export const LegalText = styled(Text)`
-  font-size: 1vw;
-  font-weight: 200;
+  font-size: 12px;
+  font-weight: 100;
   line-height: 0.9em;
+  @media only screen and (min-width: 768px) {
+    font-size: 14px;
+  }
 `;
 
 export const Input = styled(TextInput)`
@@ -57,23 +105,4 @@ export const InputCard = styled(TextInput)`
   border-radius: 4px;
   height: 55px;
   text-align: center;
-`;
-
-export const AddButton = styled(Button)`
-  background-color: #9060eb;
-  border-radius: 50%;
-  align-self: center;
-  position: absolute;
-  top: 280px;
-  @media only screen and (min-width: 768px) {
-    padding: 30px;
-    top: 590px;
-  }
-`;
-
-export const AddIcon = styled(Add)`
-  @media only screen and (min-width: 768px) {
-    width: 56px;
-    height: 56px;
-  }
 `;

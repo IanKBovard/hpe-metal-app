@@ -1,11 +1,11 @@
 import React from 'react';
-import { Grommet, Box } from 'grommet';
+import { Grommet, Box, grommet } from 'grommet';
 import { hpe } from 'grommet-theme-hpe';
 import { deepMerge } from 'grommet/utils';
 import Loading from '../src/containers/loading';
 import Signup from '../src/containers/signup';
 import { SignupWrapper } from './containers/signup/style';
-const hpeCustom = deepMerge(hpe, {
+const grommetCustom = deepMerge(grommet, {
   formField: {
     border: {
       position: '',
@@ -14,8 +14,8 @@ const hpeCustom = deepMerge(hpe, {
 });
 function App() {
   return (
-    <Grommet full theme={hpeCustom}>
-    <Box fill align="center" style={{overflowX: 'hidden'}}>
+    <Grommet full theme={grommetCustom}>
+    <Box fill background="#1F2532" align="center" style={{overflowX: 'hidden'}}>
       <Signup/>
     </Box>
       {/*                          <Loading /> */}
