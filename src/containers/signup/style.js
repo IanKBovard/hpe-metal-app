@@ -92,7 +92,7 @@ export const FormWrapper = styled(Box)`
 export const LegalText = styled(Text)`
   font-size: 12px;
   font-weight: 100;
-  line-height: 0.9em;
+  line-height: 1em;
   @media only screen and (min-width: 768px) {
     font-size: 14px;
   }
