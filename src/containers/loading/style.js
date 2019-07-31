@@ -14,21 +14,21 @@ export const Layout = styled(Box)`
 `;
 
 export const TitleText = styled(Heading)`
-  font-size: 12vw;
+  font-size: 8vw;
   font-weight: 900;
   line-height: 0.8em;
   margin: 0px;
   @media only screen and (min-width: 1024px) {
-    font-size: 8vw;
+    font-size: 6vw;
   }
 `;
 
 export const InfoText = styled(Text)`
-  font-size: 4vw;
+  font-size: 3vw;
   font-weight: 200;
-  line-height: 0.8em;
+  line-height: 1em;
   @media only screen and (min-width: 1024px) {
-    font-size: 2.5vw;
+    font-size: 2vw;
   }
 `;
 

@@ -317,3 +317,10 @@ body {
     right: 27%;
   }
 }
+
+@media only screen and (min-width: 1440px) {
+  .Hand-Host {
+    width: 35%;
+    right: 32%;
+  }
+}
