@@ -20,8 +20,9 @@ function App() {
 {/*       <SignupWrapper fill background="#1F2532" align="center">
         <Signup />
       </SignupWrapper>
-      <Loading /> */}
       <AddHost />
+    */}
+      <Loading /> 
     </Grommet>
   );
 }

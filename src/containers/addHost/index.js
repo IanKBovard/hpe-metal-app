@@ -1,5 +1,5 @@
 import React from 'react';
-import { Box, Form, FormField, Button, Select, Heading } from 'grommet';
+import { Box, Form, Button, Select } from 'grommet';
 import { Close } from 'grommet-icons';
 import {
   FormWrapper,
