@@ -56,12 +56,13 @@ export const AddButton = styled(Button)`
   @media only screen and (min-width: 768px) {
     padding: 15px;
     top: 565px;
+    _:-ms-fullscreen,
+    :root {
+      left: 472px;
+    }
   }
   @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
     left: 157px;
-    @media only screen and (min-width: 768px) {
-      left: 472px;
-    }
   }
 `;
 
