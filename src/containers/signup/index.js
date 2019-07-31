@@ -30,7 +30,7 @@ const svgNamesHover = [
 
 const Signup = () => {
   return (
-    /*     <Layout fill background="#1F2532" pad={{ top: 'xlarge' }}>
+    <Layout fill background="#1F2532" pad={{ top: 'xlarge' }}>
       <TextContainer margin={{ top: 'xlarge' }} fill="horizontal">
         <TitleText>You need more metal in</TitleText>
         <TitleText>your life!</TitleText>
@@ -42,9 +42,13 @@ const Signup = () => {
         <SVG key={index} name={name} />
       ))}
       <SVG name="Button-Accent" />
-      <AddButton className="add-button" primary icon={<AddIcon size="medium" color="#ffffff" />} />
-    </Layout> */
-    <Layout background="#1F2532">
+      <AddButton
+        className="add-button"
+        primary
+        icon={<AddIcon size="medium" color="#ffffff" />}
+      />
+    </Layout>
+    /*     <Layout background="#1F2532">
       <TextContainer margin={{ top: 'xlarge' }}>
         <TitleText>Time to start jamming!</TitleText>
         <InfoText margin={{ top: 'small' }}>
@@ -111,7 +115,7 @@ const Signup = () => {
       {svgNamesHover.map((name, index) => (
         <SVG key={index} name={name} />
       ))}
-    </Layout>
+    </Layout> */
   );
 };
 
