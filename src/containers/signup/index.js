@@ -15,8 +15,8 @@ import {
   AddIcon,
 } from './style';
 
-const svgNames = ['Eye', 'Swords', 'Bird', 'Heart', 'Anchor'];
-const svgNamesHover = [
+const svg = ['Eye', 'Swords', 'Bird', 'Heart', 'Anchor'];
+const svgHover = [
   'Flower',
   'Skull-Yellow',
   'Lightning-Purple',
@@ -38,9 +38,9 @@ const Signup = () => {
           Just push the button to let the metal rain down!
         </InfoText>
       </TextContainer>
-      {svgNamesHover.map((name, index) => (
-        <SVG key={index} name={name} />
-      ))}
+        {svg.map((name, index) => (
+          <SVG key={index} name={name} />
+        ))}
       <SVG name="Button-Accent" />
       <AddButton
         className="add-button"

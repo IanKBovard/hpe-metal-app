@@ -10,6 +10,21 @@ const Hand = (props) => {
       preserveAspectRatio="xMidYMin slice"
       className={`${props.className} SVG`}
     >
+      <style> 
+      {
+        `
+          @keyframes tree-bot {
+            0% {transform: rotateZ(0) translateX(0) translateY(-1px);}
+            50% {transform: rotateZ(-5deg) translateX(0px) translateY(-1px);}
+            100% {transform: rotateZ(0) translateX(0) translateY(-1px);}
+          }
+          .Hand {
+            transform-origin: bottom;
+            animation:tree-bot 6s ease-out infinite;
+          }
+        `
+      }
+      </style>
       <defs>
         <polygon
           id="path-1"
