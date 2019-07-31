@@ -21,7 +21,7 @@ const AddHost = () => {
         {svgNames.map((name, index) => (
           <SVG key={index} name={name} className={`${name}-Host`} />
         ))}
-        <RockinText>More Rockin'</RockinText>
+        <RockinText alignSelf="center">More Rockin'</RockinText>
       </SVGWrapper>
       <FormWrapper background="white" pad={{left: 'large', right: 'large'}}>
         <Button

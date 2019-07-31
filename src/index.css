@@ -8,6 +8,7 @@ body {
 .SVG {
   position: absolute;
 }
+
 /* Loading */
 .Yellow-Accent {
   width: 120%;
@@ -34,54 +35,7 @@ body {
   mix-blend-mode: overlay;
 }
 
-@media only screen and (min-width: 768px) {
-  .Yellow-Accent {
-    width: 110%;
-  }
-
-  .Red-Accent {
-    width: 110%;
-  }
-
-  .Hand {
-    width: 30%;
-    right: 32%;
-    bottom: 0;
-  }
-
-  .Pink-Accent {
-    width: 110%;
-  }
-}
-
-@media only screen and (min-width: 1024px) {
-  .Yellow-Accent {
-    width: 80%;
-    right: 0%;
-    left: auto;
-  }
-
-  .Red-Accent {
-    width: 80%;
-    right: 0;
-    left: auto;
-  }
-
-  .Hand {
-    width: 20%;
-    right: 35%;
-    bottom: 0;
-  }
-
-  .Pink-Accent {
-    width: 80%;
-    right: 0;
-    left: auto;
-  }
-}
-
 /* Signup */
-
 .Anchor {
   width: 45%;
   right: 5%;
@@ -174,7 +128,56 @@ body {
   top: 10%;
 }
 
+/* Add Host */
+.Yellow-Accent-Host {
+  width: 220%;
+  left: -50%;
+  bottom: 0;
+}
+
+.Red-Accent-Host {
+  width: 220%;
+  left: -50%;
+  bottom: -5%;
+}
+
+.Hand-Host {
+  width: 60%;
+  right: 18%;
+  bottom: -6%;
+}
+
+.Pink-Accent-Host {
+  width: 220%;
+  left: -50%;
+  bottom: 0;
+  mix-blend-mode: overlay;
+}
+
 @media only screen and (min-width: 768px) {
+  /* Loading */
+  .Yellow-Accent {
+    width: 110%;
+  }
+
+  .Red-Accent {
+    width: 110%;
+  }
+
+  .Hand {
+    width: 30%;
+    right: 32%;
+    bottom: 0;
+  }
+
+  .Pink-Accent {
+    width: 110%;
+  }
+  _:-ms-fullscreen,
+  :root .hand {
+    padding-bottom: 80%;
+  }
+  /* Signup */
   .Button-Accent {
     width: 20%;
     top: 500px;
@@ -237,17 +240,80 @@ body {
     bottom: 280px;
   }
 }
+
+@media only screen and (min-width: 1024px) {
+  /* Loading */
+  .Yellow-Accent {
+    width: 80%;
+    right: 0%;
+    left: auto;
+  }
+
+  .Red-Accent {
+    width: 80%;
+    right: 0;
+    left: auto;
+  }
+
+  .Hand {
+    width: 20%;
+    right: 35%;
+    bottom: 0;
+  }
+
+  .Pink-Accent {
+    width: 80%;
+    right: 0;
+    left: auto;
+  }
+  /* Signup */
+  _:-ms-fullscreen,
+  :root .Hand {
+    padding-bottom: 55%;
+  }
+  _:-ms-fullscreen,
+  :root .Yellow-Accent {
+    padding-bottom: 29%;
+  }
+  _:-ms-fullscreen,
+  :root .Red-Accent {
+    padding-bottom: 28%;
+  }
+  _:-ms-fullscreen,
+  :root .Pink-Accent {
+    padding-bottom: 23.5%;
+  }
+  /* Add Host */
+  .Hand-Host {
+    width: 45%;
+    right: 27%;
+  }
+
+  _:-ms-fullscreen,
+  :root .Hand-Host {
+    padding-bottom: 125%;
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  .Hand-Host {
+    width: 35%;
+    right: 32%;
+  }
+  _:-ms-fullscreen,
+  :root .Hand-Host {
+    padding-bottom: 100%;
+  }
+}
 /* IE11 */
 @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
   /* SVG IMGS */
-
   .SVG {
     height: 1px;
     overflow: visible;
   }
 
   /* Loading  */
-
   .Hand {
     padding-bottom: 100%;
   }
@@ -263,64 +329,20 @@ body {
   .Yellow-Accent {
     padding-bottom: 39%;
   }
-  @media only screen and (min-width: 768px) {
-    .Hand {
-      padding-bottom: 80%;
-    }
-  }
-  @media only screen and (min-width: 1024px) {
-    .Hand {
-      padding-bottom: 55%;
-    }
-    .Pink-Accent {
-      padding-bottom: 23.5%;
-    }
-
-    .Red-Accent {
-      padding-bottom: 28%;
-    }
-
-    .Yellow-Accent {
-      padding-bottom: 29%;
-    }
-  }
-}
-
-/* Add Host */
-.Yellow-Accent-Host {
-  width: 220%;
-  left: -50%;
-  bottom: 0;
-}
-
-.Red-Accent-Host {
-  width: 220%;
-  left: -50%;
-  bottom: -5%;
-}
-
-.Hand-Host {
-  width: 60%;
-  right: 18%;
-  bottom: -6%;
-}
-
-.Pink-Accent-Host {
-  width: 220%;
-  left: -50%;
-  bottom: 0;
-  mix-blend-mode: overlay;
-}
-@media only screen and (min-width: 1024px) {
+  /* Add Host  */
   .Hand-Host {
-    width: 45%;
-    right: 27%;
+    padding-bottom: 161%;
   }
-}
 
-@media only screen and (min-width: 1440px) {
-  .Hand-Host {
-    width: 35%;
-    right: 32%;
+  .Pink-Accent-Host {
+    padding-bottom: 65%;
+  }
+
+  .Red-Accent-Host {
+    padding-bottom: 74%;
+  }
+
+  .Yellow-Accent-Host {
+    padding-bottom: 81%;
   }
 }

@@ -7,10 +7,7 @@ export const RockinText = styled(Heading)`
   font-size: 7.5vw;
   font-weight: 900;
   line-height: 0.8em;
-  margin: 0px;
-  left: 0;
   margin: auto;
-  right: 0;
   z-index: 100;
 `;
 export const SVGWrapper = styled(Box)`
