@@ -3,8 +3,51 @@ body {
   padding: 0;
   background: #1f2532;
 }
-/* SVG IMGS */
 
+/* IE11 */
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  /* SVG IMGS */
+  .SVG {
+    height: 1px;
+    overflow: visible;
+  }
+
+  /* Loading  */
+  .Hand {
+    padding-bottom: 100%;
+  }
+
+  .Pink-Accent {
+    padding-bottom: 30%;
+  }
+
+  .Red-Accent {
+    padding-bottom: 33%;
+  }
+
+  .Yellow-Accent {
+    padding-bottom: 39%;
+  }
+
+  /* Add Host  */
+  .Hand-Host {
+    padding-bottom: 161%;
+  }
+
+  .Pink-Accent-Host {
+    padding-bottom: 65%;
+  }
+
+  .Red-Accent-Host {
+    padding-bottom: 74%;
+  }
+
+  .Yellow-Accent-Host {
+    padding-bottom: 81%;
+  }
+}
+
+/* SVG IMGS */
 .SVG {
   position: absolute;
 }
@@ -174,7 +217,7 @@ body {
     width: 110%;
   }
   _:-ms-fullscreen,
-  :root .hand {
+  :root .Hand {
     padding-bottom: 80%;
   }
   /* Signup */
@@ -303,46 +346,5 @@ body {
   _:-ms-fullscreen,
   :root .Hand-Host {
     padding-bottom: 100%;
-  }
-}
-/* IE11 */
-@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
-  /* SVG IMGS */
-  .SVG {
-    height: 1px;
-    overflow: visible;
-  }
-
-  /* Loading  */
-  .Hand {
-    padding-bottom: 100%;
-  }
-
-  .Pink-Accent {
-    padding-bottom: 30%;
-  }
-
-  .Red-Accent {
-    padding-bottom: 33%;
-  }
-
-  .Yellow-Accent {
-    padding-bottom: 39%;
-  }
-  /* Add Host  */
-  .Hand-Host {
-    padding-bottom: 161%;
-  }
-
-  .Pink-Accent-Host {
-    padding-bottom: 65%;
-  }
-
-  .Red-Accent-Host {
-    padding-bottom: 74%;
-  }
-
-  .Yellow-Accent-Host {
-    padding-bottom: 81%;
   }
 }
