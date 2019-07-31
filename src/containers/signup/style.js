@@ -60,7 +60,7 @@ export const AddButton = styled(Button)`
   @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
     left: 157px;
     @media only screen and (min-width: 768px) {
-      left: 457px;
+      left: 472px;
     }
   }
 `;
@@ -82,10 +82,15 @@ export const FormWrapper = styled(Box)`
   top: 140px;
   margin: auto;
   border-radius: 8%;
+  z-index: 100;
   @media only screen and (min-width: 768px) {
     height: 500px;
     width: 650px;
     top: 300px;
+  }
+  @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+    height: 500px;
+    top: 170px;
   }
 `;
 
