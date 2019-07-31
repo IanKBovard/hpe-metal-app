@@ -1,13 +1,14 @@
 import React from 'react';
 
-const Hand = () => {
+const Hand = (props) => {
+  console.log(props);
   return (
     <svg
       viewBox="0 0 342 943"
       xmlns="http://www.w3.org/2000/svg"
       xmlnsXlink="http://www.w3.org/1999/xlink"
       preserveAspectRatio="xMidYMin slice"
-      className="Hand SVG"
+      className={`${props.className} SVG`}
     >
       <defs>
         <polygon

@@ -8,7 +8,7 @@ body {
 .SVG {
   position: absolute;
 }
-/* Loading Screen */
+/* Loading */
 .Yellow-Accent {
   width: 120%;
   left: 0;
@@ -80,7 +80,7 @@ body {
   }
 }
 
-/* Signup Screen */
+/* Signup */
 
 .Anchor {
   width: 45%;
@@ -182,55 +182,55 @@ body {
     right: 0;
     margin: auto;
   }
-  
+
   .Flower {
     width: 30%;
     top: -155px;
     left: 10px;
   }
-  
+
   .Guitar-Green {
     width: 40%;
     left: -150px;
     top: 380px;
   }
-  
+
   .Guitar-Purple {
     width: 32%;
     right: 100px;
     bottom: -120px;
   }
-  
+
   .Lightning-Blue {
     width: 15%;
     right: 200px;
     top: 400px;
   }
-  
+
   .Lightning-Green {
     width: 15%;
     left: 220px;
     bottom: -10px;
   }
-  
+
   .Lightning-Purple {
     width: 15%;
     left: 300px;
     top: 100px;
   }
-  
+
   .Skull-Blue {
     width: 15%;
     left: 220px;
     bottom: 290px;
   }
-  
+
   .Skull-Yellow {
     width: 15%;
     right: 150px;
     top: -50px;
   }
-  
+
   .Skull-Red {
     width: 15%;
     right: 10px;
@@ -246,7 +246,7 @@ body {
     overflow: visible;
   }
 
-  /* Loading Screen */
+  /* Loading  */
 
   .Hand {
     padding-bottom: 100%;
@@ -285,4 +285,35 @@ body {
     }
   }
 }
-/* Signup Screen */
+
+/* Add Host */
+.Yellow-Accent-Host {
+  width: 220%;
+  left: -50%;
+  bottom: 0;
+}
+
+.Red-Accent-Host {
+  width: 220%;
+  left: -50%;
+  bottom: -5%;
+}
+
+.Hand-Host {
+  width: 60%;
+  right: 18%;
+  bottom: -6%;
+}
+
+.Pink-Accent-Host {
+  width: 220%;
+  left: -50%;
+  bottom: 0;
+  mix-blend-mode: overlay;
+}
+@media only screen and (min-width: 1024px) {
+  .Hand-Host {
+    width: 45%;
+    right: 27%;
+  }
+}

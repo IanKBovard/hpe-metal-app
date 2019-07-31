@@ -1,6 +1,6 @@
 import React from 'react';
 import { Box, Form, FormField, Button } from 'grommet';
-import { Info, Close } from 'grommet-icons';
+import { Close } from 'grommet-icons';
 import SVG from '../../components/svg/index';
 import {
   Layout,
@@ -10,7 +10,7 @@ import {
   TextContainer,
   Input,
   InputCard,
-  FormContainer,
+  FormWrapper,
   AddButton,
   AddIcon,
 } from './style';
@@ -54,7 +54,7 @@ const Signup = () => {
           credit card, and done! We'll handle the rest. Let's make some 
         </InfoText>
         <InfoText>music together.</InfoText>
-        <FormContainer
+        <FormWrapper
           background="#ffffff"
           direction="column"
           pad="large"
@@ -97,17 +97,17 @@ const Signup = () => {
                 </Box>
               </Box>
             </Box>
+          <Button disabled="true" margin="medium" primary alignSelf="center" type="submit" color="brand" label="Let's Rock!" />
           </Form>
           </Box>
-          <Button disabled="true" margin="medium" primary alignSelf="center" type="submit" color="brand" label="Let's Rock!" />
-          <LegalText justifySelf="end">
+          <LegalText>
             Upon mashing the submit button your credit card with be charged 10¢
             an hour by Hewlett Packard Financial Services and you will receive
             your very own physical server for the maximum amount of metal on HPE
             Servers! Speed drumming here we come! If you need to read it, we got
             all the lawyer stuff that protects the artist and the venue.
           </LegalText>
-        </FormContainer>
+        </FormWrapper>
       </TextContainer>
       {svgNamesHover.map((name, index) => (
         <SVG key={index} name={name} />

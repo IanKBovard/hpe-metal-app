@@ -24,13 +24,13 @@ import Swords from './Swords'
 const SVG = props => {
   switch (props.name) {
     case 'Hand':
-      return <Hand />;
+      return <Hand className={props.className}/>;
     case 'Red-Accent':
-      return <RedAccent />;
+      return <RedAccent className={props.className}/>;
     case 'Yellow-Accent':
-      return <YellowAccent />;
+      return <YellowAccent className={props.className}/>;
     case 'Pink-Accent':
-      return <PinkAccent />;
+      return <PinkAccent className={props.className}/>;
     case 'Anchor':
       return <Anchor />;
     case 'Bird':

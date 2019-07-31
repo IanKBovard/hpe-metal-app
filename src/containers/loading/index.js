@@ -1,5 +1,5 @@
 import React from 'react';
-import { Anchor, Box } from 'grommet';
+import { Anchor } from 'grommet';
 
 import SVG from '../../components/svg/index';
 import { TitleText, InfoText, TextContainer, Layout } from './style';
@@ -21,7 +21,7 @@ const Loading = () => {
         </InfoText>
       </TextContainer>
       {svgNames.map((name, index) => (
-        <SVG key={index} name={name} />
+        <SVG key={index} name={name} className={name}/>
       ))}
     </Layout>
   );

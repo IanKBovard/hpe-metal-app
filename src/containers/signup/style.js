@@ -3,6 +3,10 @@ import { Box, Text, Heading, Button, TextInput } from 'grommet';
 import { Add } from 'grommet-icons';
 
 /* Layout and text */
+export const SignupWrapper = styled(Box)`
+  overflow-x: hidden;
+`;
+
 export const Layout = styled(Box)`
   position: relative;
   max-height: 640px;
@@ -69,7 +73,7 @@ export const AddIcon = styled(Add)`
 `;
 
 /* Form */
-export const FormContainer = styled(Box)`
+export const FormWrapper = styled(Box)`
   height: 480px;
   width: 360px;
   position: absolute;
