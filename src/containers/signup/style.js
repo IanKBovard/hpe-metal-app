@@ -91,6 +91,9 @@ export const FormWrapper = styled(Box)`
   @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
     height: 500px;
     top: 170px;
+    @media only screen and (min-width: 768px) {
+      top: 300px;
+    }
   }
 `;
 
