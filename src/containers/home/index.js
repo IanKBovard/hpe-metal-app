@@ -1,27 +1,13 @@
 import React from 'react';
-import { Box, Text, Button, Anchor } from 'grommet';
+import { Box, Text, Anchor } from 'grommet';
 import { MapLocation, ServerCluster, Network, Grow, Add } from 'grommet-icons';
 
+import { Card, AddButton } from './style';
 const Home = () => {
   return (
-    <Box fill background="#1F2532" pad="96px" justify="center">
-      <Box
-        direction="row"
-        gap="small"
-        style={{
-          minWidth: '400px',
-          minHeight: '550px',
-        }}
-      >
-        <Box
-          direction="column"
-          background="#ffffff"
-          style={{
-            minWidth: '400px',
-            borderRadius: '10px',
-          }}
-          margin={{ bottom: 'medium' }}
-        >
+    <Box background="#1F2532" pad="96px" justify="center">
+      <Box direction="row" gap="medium">
+        <Card direction="column" background="#ffffff">
           <Box basis="1/2"></Box>
           <Box basis="1/2" pad="24px" direction="column" justify="between">
             <Box direction="column">
@@ -30,43 +16,32 @@ const Home = () => {
                   Peart-1
                 </Text>
               </Anchor>
-              <Text weight="100">bmserver-666-web1.las.sl.hpe.net</Text>
+              <Text weight={100}>bmserver-666-web1.las.sl.hpe.net</Text>
             </Box>
             <Box gap="10px">
-              <Box direction="row" gap="xsmall">
-                <MapLocation size="small" />{' '}
-                <Text size="xsmall" weight="100">
-                  HPE Las Vegas Data Center
-                </Text>
-              </Box>
-              <Box direction="row" gap="xsmall">
-                <ServerCluster size="small" />{' '}
-                <Text size="xsmall" weight="100">
-                  HPE ProLiant M360 Gen10
-                </Text>
-              </Box>
-              <Box direction="row" gap="xsmall">
-                <Grow size="small" />{' '}
-                <Text size="xsmall" weight="100">
-                  Kick the tires
-                </Text>
-              </Box>
-              <Box direction="row" gap="xsmall">
-                <Network size="small" />{' '}
-                <Text size="xsmall" weight="100">
-                  Public
-                </Text>
-              </Box>
+              <CardDetails
+                icon={<MapLocation size="small" />}
+                text="HPE Las Veas Data Center"
+              />
+              <CardDetails
+                icon={<ServerCluster size="small" />}
+                text="HPE ProLiant M360 Gen10"
+              />
+              <CardDetails icon={<Grow size="small" />} text="Kick the tires" />
+              <CardDetails icon={<Network size="small" />} text="Public" />
             </Box>
           </Box>
-        </Box>
-        <Box margin="large" direction="row" gap="small" alignSelf="center">
-          <Button
+        </Card>
+        <Box
+          direction="row"
+          gap="small"
+          alignSelf="center"
+          style={{ minWidth: '180px' }}
+        >
+          <AddButton
             href="/add-host"
             primary
-            color="#9060EB"
             icon={<Add size="medium" color="#ffffff" />}
-            style={{ borderRadius: '50%' }}
           />
           <Text alignSelf="center" size="large">
             Add Another
@@ -77,4 +52,14 @@ const Home = () => {
   );
 };
 
+const CardDetails = props => {
+  return (
+    <Box direction="row" gap="xsmall">
+      {props.icon}
+      <Text size="xsmall" weight={100}>
+        {props.text}
+      </Text>
+    </Box>
+  );
+};
 export default Home;
