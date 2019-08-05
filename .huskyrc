@@ -1,0 +1,6 @@
+{
+  "hooks": {
+    "pre-commit": "react-scripts test -watchAll",
+    "pre-push": "react-scripts test -watchAll"
+  }
+}
