@@ -11,7 +11,7 @@ const Home = () => {
           <Box basis="1/2"></Box>
           <Box basis="1/2" pad="24px" direction="column" justify="between">
             <Box direction="column">
-              <Anchor href="/host-summary">
+              <Anchor href="/host-summary" alignSelf="start">
                 <Text size="42px" weight="bold">
                   Peart-1
                 </Text>
