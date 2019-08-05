@@ -1,12 +1,12 @@
 import React from 'react';
 
-const PinkAccent = () => {
+const PinkAccent = (props) => {
   return (
     <svg
       viewBox="0 0 174 246"
       xmlns="http://www.w3.org/2000/svg"
       preserveAspectRatio="xMidYMin slice"
-      className="Lightning-Purple SVG"
+      className={`${props.className} SVG`}
     >
       <g id="Page-1" fill="none" fillRule="evenodd">
         <g

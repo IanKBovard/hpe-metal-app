@@ -17,11 +17,11 @@ const Loading = () => {
           Taking you to your server! Can't wait? No
         </InfoText>
         <InfoText>
-          prob, take me to <Anchor label="my portal" />.
+          prob, take me to <Anchor href="/signup" label="my portal" />.
         </InfoText>
       </TextContainer>
       {svgNames.map((name, index) => (
-        <SVG key={index} name={name} className={name}/>
+        <SVG key={index} name={name} />
       ))}
     </Layout>
   );

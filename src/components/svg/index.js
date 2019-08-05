@@ -19,48 +19,48 @@ import LightningPurple from './LightningPurple';
 import SkullBlue from './SkullBlue';
 import SkullRed from './SkullRed';
 import SkullYellow from './SkullYellow';
-import Swords from './Swords'
+import Swords from './Swords';
 
 const SVG = props => {
   switch (props.name) {
     case 'Hand':
-      return <Hand className={props.className}/>;
+      return <Hand className={`${props.name} ${props.class || ''}`} />;
     case 'Red-Accent':
-      return <RedAccent className={props.className}/>;
+      return <RedAccent className={`${props.name} ${props.class || ''}`} />;
     case 'Yellow-Accent':
-      return <YellowAccent className={props.className}/>;
+      return <YellowAccent className={`${props.name} ${props.class || ''}`} />;
     case 'Pink-Accent':
-      return <PinkAccent className={props.className}/>;
+      return <PinkAccent className={`${props.name} ${props.class || ''}`} />;
     case 'Anchor':
-      return <Anchor />;
+      return <Anchor className={`${props.name} ${props.hover}`}/>;
     case 'Bird':
-      return <Bird />;
+      return <Bird className={`${props.name} ${props.hover}`}/>;
     case 'Button-Accent':
       return <ButtonAccent />;
     case 'Eye':
-      return <Eye />;
+      return <Eye className={`${props.name} ${props.hover}`}/>;
     case 'Flower':
-      return <Flower />;
+      return <Flower className={`${props.name} ${props.hover}`} />;
     case 'Guitar-Green':
-      return <GuitarGreen />;
+      return <GuitarGreen className={`${props.name} ${props.hover}`}/>;
     case 'Guitar-Purple':
-      return <GuitarPurple />;
+      return <GuitarPurple className={`${props.name} ${props.hover}`}/>;
     case 'Heart':
-      return <Heart />;
+      return <Heart className={`${props.name} ${props.hover}`}/>;
     case 'Lightning-Blue':
-      return <LightningBlue />;
+      return <LightningBlue className={`${props.name} ${props.hover}`}/>;
     case 'Lightning-Green':
-      return <LightningGreen />;
+      return <LightningGreen className={`${props.name} ${props.hover}`}/>;
     case 'Lightning-Purple':
-      return <LightningPurple />;
+      return <LightningPurple className={`${props.name} ${props.hover}`}/>;
     case 'Skull-Blue':
-      return <SkullBlue />;
+      return <SkullBlue className={`${props.name} ${props.hover}`}/>;
     case 'Skull-Red':
-      return <SkullRed />;
+      return <SkullRed className={`${props.name} ${props.hover}`}/>;
     case 'Skull-Yellow':
-      return <SkullYellow />;
+      return <SkullYellow className={`${props.name} ${props.hover}`}/>;
     case 'Swords':
-      return <Swords />;
+      return <Swords className={`${props.name} ${props.hover}`}/>;
     default:
       return;
   }

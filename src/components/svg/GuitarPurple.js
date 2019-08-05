@@ -1,12 +1,12 @@
 import React from 'react';
 
-const GuitarPurple = () => {
+const GuitarPurple = (props) => {
   return (
     <svg
       viewBox="0 0 387 523"
       xmlns="http://www.w3.org/2000/svg"
       preserveAspectRatio="xMidYMin slice"
-      className="Guitar-Purple SVG"
+      className={`${props.className} SVG`}
     >
       <g id="Page-1" fill="none" fillRule="evenodd">
         <g

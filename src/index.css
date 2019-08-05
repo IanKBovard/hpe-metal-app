@@ -53,6 +53,7 @@ body {
 }
 
 /* Loading */
+
 .Yellow-Accent {
   width: 120%;
   left: 0;
@@ -79,16 +80,33 @@ body {
 }
 
 /* Signup */
+
+.add-button {
+  z-index: 20;
+}
+
 .Anchor {
   width: 35%;
   right: 50px;
   bottom: 110px;
+}
+.Anchor.Enter {
+  animation: fade-out .2s both;
+}
+.Anchor.Leave {
+  animation: fade-in .3s both;
 }
 
 .Bird {
   width: 38%;
   right: 10px;
   top: 150px;
+}
+.Bird.Enter {
+  animation: fade-out .2s both;
+}
+.Bird.Leave {
+  animation: fade-in .3s both;
 }
 
 .Button-Accent {
@@ -104,23 +122,53 @@ body {
   right: 60px;
   top: 14px;
 }
+.Eye.Enter {
+  animation: fade-out .2s both;
+}
+.Eye.Leave {
+  animation: fade-in .3s both;
+}
 
 .Flower {
   width: 35%;
   top: -60px;
   left: -50px;
+  opacity: 0;
+}
+.Flower.Enter {
+  animation: enter-left 1.2s both;
+  opacity: 1;
+}
+.Flower.Leave {
+  animation: exit-left 0.2s both;
 }
 
 .Guitar-Green {
   width: 45%;
   left: -135px;
   top: 190px;
+  opacity: 0;
+}
+.Guitar-Green.Enter {
+  animation: enter-bottom 1.2s both;
+  opacity: 1;
+}
+.Guitar-Green.Leave {
+  animation: exit-bottom 0.2s both;
 }
 
 .Guitar-Purple {
   width: 55%;
   right: -60px;
   bottom: 20px;
+  opacity: 0;
+}
+.Guitar-Purple.Enter {
+  animation: enter-bottom 1.2s both;
+  opacity: 1;
+}
+.Guitar-Purple.Leave {
+  animation: exit-bottom 0.2s both;
 }
 
 .Heart {
@@ -128,41 +176,95 @@ body {
   left: -50px;
   bottom: 220px;
 }
+.Heart.Enter {
+  animation: fade-out .2s both;
+}
+.Heart.Leave {
+  animation: fade-in .3s both;
+}
 
 .Lightning-Blue {
   width: 16%;
   right: 10px;
   top: 200px;
+  opacity: 0;
+}
+.Lightning-Blue.Enter {
+  animation: enter-top 1.2s both;
+  opacity: 1;
+}
+.Lightning-Blue.Leave {
+  animation: exit-top 0.2s both;
 }
 
 .Lightning-Green {
   width: 20%;
   left: 20px;
   bottom: 150px;
+  opacity: 0;
+}
+.Lightning-Green.Enter {
+  animation: enter-top 1.2s both;
+  opacity: 1;
+}
+.Lightning-Green.Leave {
+  animation: exit-top 0.2s both;
 }
 
 .Lightning-Purple {
   width: 17%;
   left: 90px;
   top: 55px;
+  opacity: 0;
+}
+.Lightning-Purple.Enter {
+  animation: enter-top 1.2s both;
+  opacity: 1;
+}
+.Lightning-Purple.Leave {
+  animation: exit-top 0.2s both;
 }
 
 .Skull-Blue {
   width: 18%;
   left: 30px;
   bottom: 290px;
+  opacity: 0;
+}
+.Skull-Blue.Enter {
+  animation: enter-right 1.2s both;
+  opacity: 1;
+}
+.Skull-Blue.Leave {
+  animation: exit-right 0.2s both;
 }
 
 .Skull-Yellow {
   width: 20%;
   right: 50px;
   top: -20px;
+  opacity: 0;
+}
+.Skull-Yellow.Enter {
+  animation: enter-right 1.2s both;
+  opacity: 1;
+}
+.Skull-Yellow.Leave {
+  animation: exit-right 0.2s both;
 }
 
 .Skull-Red {
   width: 20%;
   right: -60px;
   bottom: 290px;
+  opacity: 0;
+}
+.Skull-Red.Enter {
+  animation: enter-right 1.2s both;
+  opacity: 1;
+}
+.Skull-Red.Leave {
+  animation: exit-right 0.2s both;
 }
 
 .Swords {
@@ -170,27 +272,32 @@ body {
   left: 40px;
   top: 60px;
 }
-
+.Swords.Enter {
+  animation: fade-out .2s both;
+}
+.Swords.Leave {
+  animation: fade-in .3s both;
+}
 /* Add Host */
-.Yellow-Accent-Host {
+.Yellow-Accent.Host {
   width: 220%;
   left: -50%;
   bottom: 0;
 }
 
-.Red-Accent-Host {
+.Red-Accent.Host {
   width: 220%;
   left: -50%;
   bottom: -5%;
 }
 
-.Hand-Host {
+.Hand.Host {
   width: 60%;
   right: 18%;
   bottom: -6%;
 }
 
-.Pink-Accent-Host {
+.Pink-Accent.Host {
   width: 220%;
   left: -50%;
   bottom: 0;
@@ -366,24 +473,292 @@ body {
     padding-bottom: 23.5%;
   }
   /* Add Host */
-  .Hand-Host {
+  .Hand.Host {
     width: 45%;
     right: 27%;
   }
 
   _:-ms-fullscreen,
-  :root .Hand-Host {
+  :root .Hand.Host {
     padding-bottom: 125%;
   }
 }
 
 @media only screen and (min-width: 1440px) {
-  .Hand-Host {
+  .Hand.Host {
     width: 35%;
     right: 32%;
   }
   _:-ms-fullscreen,
-  :root .Hand-Host {
+  :root .Hand.Host {
     padding-bottom: 100%;
+  }
+}
+
+/* Animations */
+
+@keyframes shake {
+  0% {
+    transform: rotateZ(20deg) translateX(0) translateY(0);
+  }
+  50% {
+    transform: rotateZ(-20deg) translateX(0) translateY(0);
+  }
+  100% {
+    transform: rotateZ(20deg) translateX(0) translateY(0);
+  }
+}
+
+@keyframes enter-top {
+  0% {
+    transform: translateY(-1000px);
+    animation-timing-function: ease-in;
+    opacity: 0;
+  }
+  24% {
+    opacity: 1;
+  }
+  40% {
+    transform: translateY(-24px);
+    animation-timing-function: ease-in;
+  }
+  65% {
+    transform: translateY(-12px);
+    animation-timing-function: ease-in;
+  }
+  82% {
+    transform: translateY(-6px);
+    animation-timing-function: ease-in;
+  }
+  93% {
+    transform: translateY(-4px);
+    animation-timing-function: ease-in;
+  }
+  25%,
+  55%,
+  75%,
+  87% {
+    transform: translateY(0px);
+    animation-timing-function: ease-out;
+  }
+  100% {
+    transform: translateY(0px);
+    animation-timing-function: ease-out;
+    opacity: 1;
+  }
+}
+
+@keyframes enter-right {
+  0% {
+    transform: translateX(1000px);
+    animation-timing-function: ease-in;
+    opacity: 0;
+  }
+  24% {
+    opacity: 1;
+  }
+  40% {
+    transform: translateX(26px);
+    animation-timing-function: ease-in;
+  }
+  65% {
+    transform: translateX(13px);
+    animation-timing-function: ease-in;
+  }
+  82% {
+    transform: translateX(6.5px);
+    animation-timing-function: ease-in;
+  }
+  93% {
+    transform: translateX(4px);
+    animation-timing-function: ease-in;
+  }
+  25%,
+  55%,
+  75%,
+  87%,
+  98% {
+    transform: translateX(0px);
+    animation-timing-function: ease-out;
+  }
+  100% {
+    transform: translateX(0px);
+    animation-timing-function: ease-out;
+    opacity: 1;
+  }
+}
+
+@keyframes enter-bottom {
+  0% {
+    transform: translateY(1000px);
+    animation-timing-function: ease-in;
+    opacity: 0;
+  }
+  24% {
+    opacity: 1;
+  }
+  40% {
+    transform: translateY(24px);
+    animation-timing-function: ease-in;
+  }
+  65% {
+    transform: translateY(12px);
+    animation-timing-function: ease-in;
+  }
+  82% {
+    transform: translateY(6px);
+    animation-timing-function: ease-in;
+  }
+  93% {
+    transform: translateY(4px);
+    animation-timing-function: ease-in;
+  }
+  25%,
+  55%,
+  75%,
+  87% {
+    transform: translateY(0px);
+    animation-timing-function: ease-out;
+  }
+  100% {
+    transform: translateY(0px);
+    animation-timing-function: ease-out;
+    opacity: 1;
+  }
+}
+
+@keyframes enter-left {
+  0% {
+    transform: translateX(-1000px);
+    animation-timing-function: ease-in;
+    opacity: 0;
+  }
+  24% {
+    opacity: 1;
+  }
+  40% {
+    transform: translateX(-26px);
+    animation-timing-function: ease-in;
+  }
+  65% {
+    transform: translateX(-13px);
+    animation-timing-function: ease-in;
+  }
+  82% {
+    transform: translateX(-6.5px);
+    animation-timing-function: ease-in;
+  }
+  93% {
+    transform: translateX(-4px);
+    animation-timing-function: ease-in;
+  }
+  25%,
+  55%,
+  75%,
+  87%,
+  98% {
+    transform: translateX(0px);
+    animation-timing-function: ease-out;
+  }
+  100% {
+    transform: translateX(0px);
+    animation-timing-function: ease-out;
+    opacity: 1;
+  }
+}
+@keyframes exit-left {
+  0% {
+    transform: translateX(0px);
+    animation-timing-function: ease-in;
+    opacity: 1;
+  }
+  80%{
+    opacity: 1;
+  }
+  100% {
+    transform: translateX(-1000px);
+    animation-timing-function: ease-out;
+    opacity: 0;
+  }
+}
+@keyframes exit-right {
+  0% {
+    transform: translateX(0px);
+    animation-timing-function: ease-in;
+    opacity: 1;
+  }
+  80%{
+    opacity: 1;
+  }
+  100% {
+    transform: translateX(1000px);
+    animation-timing-function: ease-out;
+    opacity: 0;
+  }
+}
+
+@keyframes exit-bottom {
+  0% {
+    transform: translateY(0px);
+    animation-timing-function: ease-in;
+    opacity: 1;
+  }
+  24% {
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(1000px);
+    animation-timing-function: ease-out;
+    opacity: 0;
+  }
+}
+
+@keyframes exit-top {
+  0% {
+    transform: translateY(-1000px);
+    animation-timing-function: ease-in;
+    opacity: 1;
+  }
+  24% {
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(0px);
+    animation-timing-function: ease-out;
+    opacity: 0;
+  }
+}
+
+@keyframes fade-out {
+  0% {
+    animation-timing-function: ease-in;
+    opacity: 1;
+  }
+  24% {
+    opacity: 1;
+  }
+  50% {
+    opacity: .5;
+  }
+  100% {
+    animation-timing-function: ease-out;
+    opacity: 0;
+  }
+}
+
+@keyframes fade-in {
+  0% {
+    animation-timing-function: ease-in;
+    opacity: 0;
+  }
+  24% {
+    opacity: 0;
+  }
+  50% {
+    opacity: .5;
+  }
+  100% {
+    animation-timing-function: ease-out;
+    opacity: 1;
   }
 }

@@ -4,7 +4,7 @@ import { Add } from 'grommet-icons';
 
 /* Layout and text */
 export const SignupWrapper = styled(Box)`
-  overflow-x: hidden;
+  overflow: hidden;
 `;
 
 export const Layout = styled(Box)`
@@ -76,14 +76,14 @@ export const FormWrapper = styled(Box)`
   position: absolute;
   left: 0;
   right: 0;
-  top: 140px;
+  top: 160px;
   margin: auto;
   border-radius: 8%;
-  z-index: 100;
+  z-index: 200;
   @media only screen and (min-width: 768px) {
     height: 500px;
     width: 650px;
-    top: 300px;
+    top: 350px;
   }
   @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
     height: 500px;

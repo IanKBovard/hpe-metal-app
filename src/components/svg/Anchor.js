@@ -1,12 +1,12 @@
 import React from 'react';
 
-const Anchor = () => {
+const Anchor = (props) => {
   return (
     <svg
       viewBox="0 0 227 264"
       xmlns="http://www.w3.org/2000/svg"
       preserveAspectRatio="xMidYMin slice"
-      className="Anchor SVG"
+      className={`${props.className} SVG`}
     >
       <g id="Page-1" fill="none" fillRule="evenodd">
         <g

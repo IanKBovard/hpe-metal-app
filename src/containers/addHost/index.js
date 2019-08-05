@@ -19,16 +19,17 @@ const AddHost = () => {
     <Box fill background="#1F2532" direction="row">
       <SVGWrapper>
         {svgNames.map((name, index) => (
-          <SVG key={index} name={name} className={`${name}-Host`} />
+          <SVG key={index} name={name} class="Host"/>
         ))}
         <RockinText alignSelf="center">More Rockin'</RockinText>
       </SVGWrapper>
       <FormWrapper background="white" pad={{left: 'large', right: 'large'}}>
         <Button
+          href="/home"
           alignSelf="end"
           plain
           icon={<Close />}
-          margin={{ bottom: 'medium' }}
+          margin={{ bottom: 'medium', top: 'medium' }}
         />
         <Box pad={{ left: 'medium', right: 'medium', top: 'small' }}>
           <TitleText>Party on dudes!</TitleText>
@@ -64,12 +65,11 @@ const AddHost = () => {
               />
             </Box>
             <Button
-              disabled={true}
               margin={{ top: 'medium' }}
               primary
               alignSelf="start"
               type="submit"
-              color="brand"
+              color="#9060EB"
               label="Party On"
             />
           </Form>

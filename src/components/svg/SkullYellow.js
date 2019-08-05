@@ -1,12 +1,12 @@
 import React from 'react';
 
-const SkullYellow = () => {
+const SkullYellow = (props) => {
   return (
     <svg
       viewBox="0 0 177 210"
       xmlns="http://www.w3.org/2000/svg"
       preserveAspectRatio="xMidYMin slice"
-      className="Skull-Yellow SVG"
+      className={`${props.className} SVG`}
     >
       <g id="Page-1" fill="none" fillRule="evenodd">
         <g

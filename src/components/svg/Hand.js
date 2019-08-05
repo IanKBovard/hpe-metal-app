@@ -1,7 +1,6 @@
 import React from 'react';
 
 const Hand = (props) => {
-  console.log(props);
   return (
     <svg
       viewBox="0 0 342 943"
@@ -13,14 +12,14 @@ const Hand = (props) => {
       <style> 
       {
         `
-          @keyframes tree-bot {
-            0% {transform: rotateZ(0) translateX(0) translateY(-1px);}
-            50% {transform: rotateZ(-5deg) translateX(0px) translateY(-1px);}
-            100% {transform: rotateZ(0) translateX(0) translateY(-1px);}
+          @keyframes hand-rock {
+            0% {transform: rotateZ(5deg) translateX(0) translateY(60px);}
+            50% {transform: rotateZ(-10deg) translateX(0) translateY(60px);}
+            100% {transform: rotateZ(5deg) translateX(0) translateY(60px);}
           }
           .Hand {
             transform-origin: bottom;
-            animation:tree-bot 6s ease-out infinite;
+            animation:hand-rock 5s ease-out infinite;
           }
         `
       }

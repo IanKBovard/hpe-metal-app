@@ -1,11 +1,11 @@
 import React from 'react';
 
-const Flower = () => {
+const Flower = (props) => {
   return (
     <svg
       viewBox="0 0 328 304"
       xmlns="http://www.w3.org/2000/svg"
-      className="Flower SVG"
+      className={`${props.className} SVG`}
       preserveAspectRatio="xMidYMin slice"
     >
       <g id="Page-1" fill="none" fillRule="evenodd">
