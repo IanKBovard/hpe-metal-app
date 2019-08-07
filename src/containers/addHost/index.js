@@ -8,30 +8,26 @@ import {
   InfoText,
   LegalText,
   RockinText,
+  Layout,
 } from './style';
-
+import Logo from '../../components/logo/index';
 import SVG from '../../components/svg/index';
 
 const svgNames = ['Red-Accent', 'Pink-Accent', 'Hand', 'Yellow-Accent'];
 
 const AddHost = () => {
   return (
-    <Box fill background="#1F2532" direction="row">
+    <Layout background="#1F2532" direction="row">
       <SVGWrapper>
+        <Logo />
         {svgNames.map((name, index) => (
-          <SVG key={index} name={name} class="Host"/>
+          <SVG key={index} name={name} class="Host" />
         ))}
         <RockinText alignSelf="center">More Rockin'</RockinText>
       </SVGWrapper>
-      <FormWrapper background="white" pad={{left: 'large', right: 'large'}}>
-        <Button
-          href="/home"
-          alignSelf="end"
-          plain
-          icon={<Close />}
-          margin={{ bottom: 'medium', top: 'medium' }}
-        />
-        <Box pad={{ left: 'medium', right: 'medium', top: 'small' }}>
+      <FormWrapper background="white">
+        <Box pad="32px">
+          <Button href="/home" alignSelf="end" plain icon={<Close color="#9060EB"/>} />
           <TitleText>Party on dudes!</TitleText>
           <InfoText margin={{ top: 'medium' }}>
             Like how it's all coming together? Sweet music to our ears.
@@ -73,16 +69,16 @@ const AddHost = () => {
               label="Party On"
             />
           </Form>
-        <LegalText margin={{top: 'medium'}}>
-          Upon mashing the submit button your credit card with be charged 10¢ an
-          hour by Hewlett Packard Financial Services and you will receive your
-          very own physical server for the maximum amount of metal on HPE
-          Servers! Speed drumming here we come! If you need to read it, we got
-          all the lawyer stuff that protects the artist and the venue.
-        </LegalText>
+          <LegalText margin={{ top: 'medium' }}>
+            Upon mashing the submit button your credit card with be charged 10¢
+            an hour by Hewlett Packard Financial Services and you will receive
+            your very own physical server for the maximum amount of metal on HPE
+            Servers! Speed drumming here we come! If you need to read it, we got
+            all the lawyer stuff that protects the artist and the venue.
+          </LegalText>
         </Box>
       </FormWrapper>
-    </Box>
+    </Layout>
   );
 };
 

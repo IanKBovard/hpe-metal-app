@@ -2,7 +2,7 @@ import styled from 'styled-components';
 import { Box, Button } from 'grommet';
 
 export const CloseButton = styled(Button)`
-  padding: 20px;
+  padding: 32px;
   align-self: flex-end;
 `;
 export const StyledButton = styled(Button)`
@@ -44,4 +44,5 @@ export const Layout = styled(Box)`
   left: 0;
   right: 0;
   margin: auto;
+  position: relative;
 `;

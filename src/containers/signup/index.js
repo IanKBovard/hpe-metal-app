@@ -16,6 +16,9 @@ import {
   SignupWrapper,
 } from './style';
 
+import Logo from '../../components/logo/index';
+import UserIcon from '../../components/userIcon/index';
+
 const svg = [
   'Eye',
   'Swords',
@@ -57,8 +60,10 @@ const Signup = () => {
 
   return (
     <SignupWrapper>
-      <Layout background="#1F2532" pad={{ top: 'large' }} alignSelf="center">
-        <TextContainer margin={{ top: 'xlarge' }} fill="horizontal">
+      <Logo />
+      <UserIcon />
+      <Layout background="#1F2532" alignSelf="center">
+        <TextContainer fill="horizontal">
           {modal ? (
             <Box>
               <TitleText>Time to start jamming!</TitleText>
@@ -130,6 +135,7 @@ const Signup = () => {
                   </Box>
                   <Button
                     margin="medium"
+                    href="/home"
                     primary
                     color="#9060EB"
                     alignSelf="center"

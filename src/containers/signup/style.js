@@ -5,6 +5,7 @@ import { Add } from 'grommet-icons';
 /* Layout and text */
 export const SignupWrapper = styled(Box)`
   overflow: hidden;
+  position: relative;
 `;
 
 export const Layout = styled(Box)`
@@ -42,8 +43,10 @@ export const InfoText = styled(Text)`
 `;
 
 export const TextContainer = styled(Box)`
+  position: relative;
   z-index: 100;
   text-align: center;
+  top: 180px;
 `;
 
 /* Open form button */

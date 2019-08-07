@@ -7,7 +7,7 @@ import {
   Analytics,
   Close,
 } from 'grommet-icons';
-
+import Logo from  '../../components/logo/index';
 import {
   Layout,
   CloseButton,
@@ -20,6 +20,7 @@ import {
 const HostSummary = () => {
   return (
     <Layout background="#1F2532">
+      <Logo />
       <CloseButton
         href="/home"
         plain

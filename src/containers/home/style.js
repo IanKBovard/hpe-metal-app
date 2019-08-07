@@ -1,10 +1,14 @@
 import styled from 'styled-components';
 import { Box, Button } from 'grommet';
 
+export const Layout = styled(Box)`
+  position: relative;
+`
+
 export const Card = styled(Box)`
-  width: 400px;
-  min-width: 400px;
-  height: 550px;
+  width: 450px;
+  min-width: 450px;
+  height: 600px;
   border-radius: 10px;
 `
 
