@@ -1,5 +1,6 @@
 import React from 'react';
-import { Box, Text, Button, Heading } from 'grommet';
+import PropTypes from 'prop-types';
+import { Box, Text, Button, Heading, Image } from 'grommet';
 import {
   MapLocation,
   ServerCluster,
@@ -7,7 +8,7 @@ import {
   Analytics,
   Close,
 } from 'grommet-icons';
-import Logo from  '../../components/logo/index';
+import Logo from '../../components/logo/index';
 import {
   Layout,
   CloseButton,
@@ -17,6 +18,7 @@ import {
   ActionsBox,
   CardScroll,
 } from './style';
+
 const HostSummary = () => {
   return (
     <Layout background="#1F2532">
@@ -36,8 +38,15 @@ const HostSummary = () => {
           </Box>
           <StyledButton label="Actions" primary color="#9060EB" />
         </Box>
-        <CardScroll direction="row" justify="between" gap="medium">
-          <MapCard background="#FFFFFF"></MapCard>
+        <CardScroll
+          direction="row"
+          justify="between"
+          gap="medium"
+          pad={{ bottom: '48px' }}
+        >
+          <MapCard>
+            <Image fit="cover" src="./img/test/map-example.svg" />
+          </MapCard>
           <DetailsCard pad="48px" background="#A2423D">
             <Text size="28px" margin={{ bottom: '56px' }}>
               Server Info
@@ -134,6 +143,16 @@ const SummaryDetails = props => {
       <Box height="1px" background="rgba(255,255,255,0.1)" />
     </Box>
   );
+};
+
+CardDetails.propTypes = {
+  icon: PropTypes.object,
+  text: PropTypes.string,
+};
+
+SummaryDetails.propTypes = {
+  title: PropTypes.string,
+  details: PropTypes.string,
 };
 
 export default HostSummary;

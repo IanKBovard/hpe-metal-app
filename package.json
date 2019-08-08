@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@karatechops/project-scripts": "^1.0.1",
     "cors": "^2.8.5",
     "enzyme": "^3.10.0",
     "enzyme-adapter-react-16": "^1.14.0",
@@ -19,6 +20,11 @@
     "react-test-renderer": "^16.8.6",
     "serverless-http": "^2.0.2",
     "styled-components": "^4.3.2"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "yarn eslint ./"
+    }
   },
   "scripts": {
     "start": "react-scripts start",
@@ -42,4 +48,3 @@
     ]
   }
 }
-

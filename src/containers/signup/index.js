@@ -41,7 +41,7 @@ const Signup = () => {
   const [modal, setModal] = useState(false);
 
   const mouseLeave = () => {
-    modal ? setHover('Enter') : setHover('Leave');
+    return modal ? setHover('Enter') : setHover('Leave');
   };
 
   const mouseEnter = () => {

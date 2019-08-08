@@ -1,6 +1,7 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
-const Anchor = (props) => {
+const Anchor = props => {
   return (
     <svg
       viewBox="0 0 227 264"
@@ -46,6 +47,10 @@ const Anchor = (props) => {
       </g>
     </svg>
   );
+};
+
+Anchor.propTypes = {
+  className: PropTypes.string,
 };
 
 export default Anchor;

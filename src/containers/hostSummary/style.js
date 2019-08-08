@@ -16,6 +16,7 @@ export const MapCard = styled(Box)`
   min-height: 425px;
   min-width: 425px;
   border-radius: 20px;
+  overflow: hidden;
 `;
 
 export const DetailsCard = styled(Box)`

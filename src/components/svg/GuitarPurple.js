@@ -1,6 +1,7 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
-const GuitarPurple = (props) => {
+const GuitarPurple = props => {
   return (
     <svg
       viewBox="0 0 387 523"
@@ -23,6 +24,10 @@ const GuitarPurple = (props) => {
       </g>
     </svg>
   );
+};
+
+GuitarPurple.propTypes = {
+  className: PropTypes.string,
 };
 
 export default GuitarPurple;

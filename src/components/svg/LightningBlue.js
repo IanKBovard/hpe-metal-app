@@ -1,6 +1,7 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
-const LightningBlue = (props) => {
+const LightningBlue = props => {
   return (
     <svg
       viewBox="0 0 174 246"
@@ -24,6 +25,10 @@ const LightningBlue = (props) => {
       </g>
     </svg>
   );
+};
+
+LightningBlue.propTypes = {
+  className: PropTypes.string,
 };
 
 export default LightningBlue;

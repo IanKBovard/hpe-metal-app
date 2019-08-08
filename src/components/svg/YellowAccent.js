@@ -1,6 +1,7 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
-const YellowAccent = (props) => {
+const YellowAccent = props => {
   return (
     <svg
       viewBox="0 0 1449 514"
@@ -18,6 +19,10 @@ const YellowAccent = (props) => {
       </g>
     </svg>
   );
+};
+
+YellowAccent.propTypes = {
+  className: PropTypes.string,
 };
 
 export default YellowAccent;
