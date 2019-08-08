@@ -1,6 +1,7 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
-const Swords = (props) => {
+const Swords = props => {
   return (
     <svg
       viewBox="0 0 331 277"
@@ -250,6 +251,10 @@ const Swords = (props) => {
       </g>
     </svg>
   );
+};
+
+Swords.propTypes = {
+  className: PropTypes.string,
 };
 
 export default Swords;

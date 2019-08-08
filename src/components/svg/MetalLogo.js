@@ -2,7 +2,12 @@ import React from 'react';
 
 const MetalLogo = () => {
   return (
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 43 60" width="30px" height="50px">
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 43 60"
+      width="30px"
+      height="50px"
+    >
       <g fill="#FFAA15" fillRule="nonzero" stroke="none" strokeWidth="1">
         <path
           d="M26.918 39.548a5.46 5.46 0 01-5.455-5.454v-15a5.46 5.46 0 015.455-5.455 5.46 5.46 0 015.454 5.455v15a5.46 5.46 0 01-5.454 5.454zm0-23.182a2.728 2.728 0 00-2.728 2.728v15a2.728 2.728 0 005.455 0V19.09a2.728 2.728 0 00-2.727-2.725z"

@@ -1,6 +1,7 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
-const SkullBlue = (props) => {
+const SkullBlue = props => {
   return (
     <svg
       viewBox="0 0 171 218"
@@ -22,6 +23,10 @@ const SkullBlue = (props) => {
       </g>
     </svg>
   );
+};
+
+SkullBlue.propTypes = {
+  className: PropTypes.string,
 };
 
 export default SkullBlue;

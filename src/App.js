@@ -5,11 +5,11 @@ import { deepMerge } from 'grommet/utils';
 import { hpe } from 'grommet-theme-hpe';
 
 /* Pages */
-import Loading from '../src/containers/loading';
-import Signup from '../src/containers/signup';
-import AddHost from '../src/containers/addHost';
-import Home from '../src/containers/home';
-import HostSummary from '../src/containers/hostSummary';
+import Loading from './containers/loading';
+import Signup from './containers/signup';
+import AddHost from './containers/addHost';
+import Home from './containers/home';
+import HostSummary from './containers/hostSummary';
 
 const hpeCustom = deepMerge(hpe, {
   formField: {

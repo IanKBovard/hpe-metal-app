@@ -1,6 +1,7 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
-const Eye = (props) => {
+const Eye = props => {
   return (
     <svg
       viewBox="0 0 200 181"
@@ -122,6 +123,10 @@ const Eye = (props) => {
       </g>
     </svg>
   );
+};
+
+Eye.propTypes = {
+  className: PropTypes.string,
 };
 
 export default Eye;

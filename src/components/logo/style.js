@@ -21,4 +21,4 @@ export const HeadingText = styled(Text)`
 
 export const LogoBox = styled(Box)`
   position: relative;
-`
+`;

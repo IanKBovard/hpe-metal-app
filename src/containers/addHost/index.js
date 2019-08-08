@@ -27,7 +27,12 @@ const AddHost = () => {
       </SVGWrapper>
       <FormWrapper background="white">
         <Box pad="32px">
-          <Button href="/home" alignSelf="end" plain icon={<Close color="#9060EB"/>} />
+          <Button
+            href="/home"
+            alignSelf="end"
+            plain
+            icon={<Close color="#9060EB" />}
+          />
           <TitleText>Party on dudes!</TitleText>
           <InfoText margin={{ top: 'medium' }}>
             Like how it's all coming together? Sweet music to our ears.

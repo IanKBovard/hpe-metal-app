@@ -1,6 +1,7 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
-const Hand = (props) => {
+const Hand = props => {
   return (
     <svg
       viewBox="0 0 342 943"
@@ -9,9 +10,8 @@ const Hand = (props) => {
       preserveAspectRatio="xMidYMin slice"
       className={`${props.className} SVG`}
     >
-      <style> 
-      {
-        `
+      <style>
+        {`
           @keyframes hand-rock {
             0% {transform: rotateZ(5deg) translateX(0) translateY(60px);}
             50% {transform: rotateZ(-10deg) translateX(0) translateY(60px);}
@@ -21,8 +21,7 @@ const Hand = (props) => {
             transform-origin: bottom;
             animation:hand-rock 5s ease-out infinite;
           }
-        `
-      }
+        `}
       </style>
       <defs>
         <polygon
@@ -2135,6 +2134,10 @@ const Hand = (props) => {
       </g>
     </svg>
   );
+};
+
+Hand.propTypes = {
+  className: PropTypes.string,
 };
 
 export default Hand;

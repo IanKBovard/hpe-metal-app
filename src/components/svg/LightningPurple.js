@@ -1,6 +1,7 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
-const PinkAccent = (props) => {
+const LightningPurple = props => {
   return (
     <svg
       viewBox="0 0 174 246"
@@ -26,4 +27,7 @@ const PinkAccent = (props) => {
   );
 };
 
-export default PinkAccent;
+LightningPurple.propTypes = {
+  className: PropTypes.string,
+};
+export default LightningPurple;

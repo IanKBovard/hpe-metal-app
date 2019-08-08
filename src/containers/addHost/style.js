@@ -52,5 +52,4 @@ export const Layout = styled(Box)`
   position: relative;
   height: 100%;
   min-height: 1024px;
-  
 `;

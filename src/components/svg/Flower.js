@@ -1,6 +1,7 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
-const Flower = (props) => {
+const Flower = props => {
   return (
     <svg
       viewBox="0 0 328 304"
@@ -22,6 +23,10 @@ const Flower = (props) => {
       </g>
     </svg>
   );
+};
+
+Flower.propTypes = {
+  className: PropTypes.string,
 };
 
 export default Flower;

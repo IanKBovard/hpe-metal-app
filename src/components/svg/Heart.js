@@ -1,6 +1,7 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
-const Heart = (props) => {
+const Heart = props => {
   return (
     <svg
       viewBox="0 0 293 238"
@@ -85,6 +86,10 @@ const Heart = (props) => {
       </g>
     </svg>
   );
+};
+
+Heart.propTypes = {
+  className: PropTypes.string,
 };
 
 export default Heart;

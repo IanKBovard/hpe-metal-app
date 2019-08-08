@@ -8,15 +8,13 @@ const PinkAccent = () => {
       preserveAspectRatio="xMidYMin slice"
       className="Button-Accent SVG"
     >
-    <style>
-    {
-      `
+      <style>
+        {`
         #Path-1 {
           height: 200px;
         }
-      `
-    }
-    </style>
+      `}
+      </style>
       <g id="Page-1" fill="none" fillRule="evenodd">
         <g
           id="metal-home-add-hover"
