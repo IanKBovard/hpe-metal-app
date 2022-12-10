@@ -7,7 +7,7 @@
     "cors": "^2.8.5",
     "enzyme": "^3.10.0",
     "enzyme-adapter-react-16": "^1.14.0",
-    "express": "^4.17.1",
+    "express": "^4.17.3",
     "grommet": "^2.7.3",
     "grommet-icons": "^4.2.0",
     "grommet-theme-hpe": "^0.4.2",
